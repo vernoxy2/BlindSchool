@@ -1,5 +1,5 @@
 import React from "react";
-import HelpImg from "../../assets/HomepageImgs/HelpImg.png";
+import HelpImg from "../../../assets/HomepageImgs/HelpImg.png";
 import { CiHeart } from 'react-icons/ci';
 
 const Help = () => {
@@ -8,7 +8,7 @@ const Help = () => {
       style={{ backgroundImage: `url(${HelpImg})` }}
       className="bg-cover bg-center py-28"
     >
-      <div className="ms-24 space-y-5">
+      <div className=" space-y-5 container">
         <div className="">
           <p className="text-primary font-bold text-6xl w-5/12">
             SMALL HELP.<br/> BIG HOPE
