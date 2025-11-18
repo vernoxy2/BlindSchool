@@ -1,6 +1,6 @@
 import Values from "./Values";
 import Empowerment from "../../../assets/HomepageImgs/empowerment (1).svg";
-import WillPower from "../../../assets/HomepageImgs/Willpower.svg";
+import WillPower from "../../../assets/HomepageImgs/WillPower.svg";
 import Support from "../../../assets/HomepageImgs/Support.svg"; 
 import Handshake from "../../../assets/HomepageImgs/Handshake.svg";
 
