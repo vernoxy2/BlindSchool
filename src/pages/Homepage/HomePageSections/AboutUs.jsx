@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 import AboutUsImg from "../../../assets/HomepageImgs/MaskGroup.png";
 import About from "../../../assets/HomepageImgs/About.png";
 
@@ -9,7 +9,7 @@ const Aboutus = () => {
       className="bg-cover py-28"
     >
       <div className="container">
-        <h1 className="text-primary font-black text-4xl text-center">
+        <h1 className="">
           About us
         </h1>
         <div className="grid grid-cols-2 py-14">

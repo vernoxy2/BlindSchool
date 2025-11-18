@@ -1,11 +1,29 @@
-import React from 'react'
+import React from "react";
+import Head from "./AboutSections/Head";
+import Committed from "./AboutSections/Committed";
+import OurPhilosophy from "./AboutSections/OurPhilosophy";
+import OurJourney from "./AboutSections/OurJourney ";
+import Expanding from "./AboutSections/Expanding.JSX";
+import OurMissionVision from "./AboutSections/OurMissionVision";
+import Certificate from "./AboutSections/Certificate";
+import Help from "../Homepage/HomePageSections/Help";
+import SocialPage from "../Homepage/HomePageSections/SocialPage";
 
-const About = () => {
+
+const about = () => {
   return (
     <div>
-      About Us Page
+      <Head />
+      <Committed />
+      <OurPhilosophy />
+      <OurJourney />
+      <Expanding />
+      <OurMissionVision />
+      <Certificate />
+      <Help />
+      <SocialPage />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default about;

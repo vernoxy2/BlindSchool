@@ -2,8 +2,8 @@ import React from 'react'
 
 const Committed = () => {
   return (
-    <div>
-      
+    <div className='text-center'>
+      Committed
     </div>
   )
 }

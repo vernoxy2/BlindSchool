@@ -1,11 +1,11 @@
 import React from 'react'
 
-const OurMissionVision = () => {
+const MakeDiff = () => {
   return (
     <div className='text-center'>
-      OurMissionVision
+      MakeDiff
     </div>
   )
 }
 
-export default OurMissionVision
+export default MakeDiff

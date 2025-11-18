@@ -1,11 +1,11 @@
 import React from 'react'
 
-const OurMissionVision = () => {
+const SocialPage = () => {
   return (
     <div className='text-center'>
-      OurMissionVision
+      Social Page
     </div>
   )
 }
 
-export default OurMissionVision
+export default SocialPage

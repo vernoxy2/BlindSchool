@@ -1,11 +1,11 @@
 import React from 'react'
 
-const OurMissionVision = () => {
+const OurPartner = () => {
   return (
     <div className='text-center'>
-      OurMissionVision
+      Our Partners
     </div>
   )
 }
 
-export default OurMissionVision
+export default OurPartner

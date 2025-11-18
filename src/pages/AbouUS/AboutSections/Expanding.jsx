@@ -1,11 +1,11 @@
 import React from 'react'
 
-const OurMissionVision = () => {
+const Expanding = () => {
   return (
     <div className='text-center'>
-      OurMissionVision
+      Expanding
     </div>
   )
 }
 
-export default OurMissionVision
+export default Expanding
