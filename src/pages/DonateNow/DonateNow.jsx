@@ -5,15 +5,26 @@ import WhyDonate from "./DonateNowSections/WhyDonate";
 import WaysYouCanHelp from "./DonateNowSections/WaysYouCanHelp";
 import Cards from "./DonateNowSections/Cards";
 import CelebrateFestivals from "./DonateNowSections/CelebrateFestivals";
+import Header from "../../component/Header";
+import Help from "../Homepage/HomePageSections/Help";
 
 const DonateNow = () => {
   return (
     <div>
-      <Head />
+      <Header
+        HeadText={"DONATE NOW"}
+        SubText={
+          "Empowering children through education your donation makes dreams possible."
+        }
+        CurrntPage={"Donate Now"}
+        PageLink="/donatenow"
+      />
+      {/* <Head /> */}
       <WhyDonate />
       <WaysYouCanHelp />
-      <Cards /> 
+      {/* <Cards /> */}
       <CelebrateFestivals />
+      <Help/>
     </div>
   );
 };
