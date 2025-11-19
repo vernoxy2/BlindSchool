@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         primary: "#2F469A",
-        textcolor: "#D0D0D0",
+        textcolor: "#0D0D0D",
       },
       container: {
         center: true,
