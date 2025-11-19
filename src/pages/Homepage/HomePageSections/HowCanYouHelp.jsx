@@ -1,37 +1,73 @@
-import React from "react";
 import BaseLine from "../../../component/BaseLine";
+import Vector from "../../../assets/HomepageImgs/Vector.svg";
+import Vector2 from "../../../assets/HomepageImgs/Vector2.svg";
+import Vector3 from "../../../assets/HomepageImgs/Vector3.svg";
 
-const HowCanYouHelp = ({ cartDatas }) => {
-  console.log(cartDatas); // <-- will show your array of 3 objects
-  
+const HowCanYouHelp = () => {
+  const carts = [
+    {
+      key: 0,
+      img: Vector,
+      MainText: "Be a Volunteer",
+      SubText:
+        "Make a difference with NAB Delhi! Volunteer to support, empower, and uplift visually impaired individuals through programs, events, and initiatives.",
+      btnText: "Join Now",
+    },
+    {
+      key: 1,
+      img: Vector2,
+      MainText: "Give Donation",
+      SubText:
+        "Your donation helps NAB Delhi provide education, healthcare, and job opportunities, empowering visually impaired individuals to build brighter, independent futures.",
+      btnText: "Donation Now",
+    },
+    {
+      key: 2,
+      img: Vector3,
+      MainText: "Join as CSR",
+      SubText:
+        "Partner with NAB Delhi as a CSR ally to empower visually impaired individuals through vital resources, services, and inclusive community initiatives.",
+      btnText: "Be a CSR Patner",
+    },
+  ];
+
   return (
-    <div className="">
-      <div className="container space-y-10">
-        <h1 className="">How Can You Help?</h1>
-        <p className="md:text-sm text-center m">
-          Your Support Matters: Let's Transform the Lives of the Visually
-          Impaired, Together
-        </p>
-        <BaseLine />
-        <div className="container text-black">
-          {cartDatas?.map((item) => (
-            <div
-              key={item.key}
-              className="space-y-5 flex flex-col items-center justify-center shadow-lg p-9 hover:bg-primary group duration-500 transition-colors"
-            >
-              <img src={item.img} alt={item.MainText} className="w-16 h-16" />
+    <div className="container w-10/12 space-y-10">
+      <h1>How Can You Help?</h1>
+      <p className="md:text-sm text-center">
+        Your Support Matters: Let's Transform the Lives of the Visually
+        Impaired, Together.
+      </p>
+      <BaseLine />
 
-              <h1 className=" text-xl font-bold text-primary md:text-2xl text-center uppercase group-hover:text-white duration-500 transition-colors">
-                {item.MainText}
-              </h1>
+      <div className=" grid md:grid-cols-3 gap-6">
+        {carts?.map((item) => (
+          <div
+            key={item.key}
+            className="space-y-5 flex flex-col items-center justify-center shadow-lg p-9 hover:border-primary border group transition-all duration-300 hover:scale-105"
+          >
+            <img
+              src={item.img}
+              alt={item.MainText}
+              className="w-16 h-16 transition-all group-hover:brightness-0 group-hover:invert"
+            />
 
-              <p className="text-black w-[93%] text-center group-hover:text-white duration-500 transition-colors">
-                {item.SubText}
-              </p>
-               <BaseLine />
+            <h1 className="text-xl font-bold text-black transition-colors group-hover:text-primary">
+              {item.MainText}
+            </h1>
+
+            <p className="text-black text-center transition-colors">
+              {item.SubText}
+            </p>
+
+            <div className="w-full flex gap-2 items-center justify-between pt-4">
+              <BaseLine />
+              <button className="bg-primary text-white text-xl p-2.5 font-semibold hover:bg-blue-700 transition-all whitespace-nowrap flex items-center justify-center">
+                {item.btnText}
+              </button>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
