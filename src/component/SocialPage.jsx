@@ -1,5 +1,5 @@
 import React from "react";
-import navLogo from "../../../assets/HomepageImgs/nablogoWhite.png";
+import navLogo from "../assets/HomepageImgs/nablogoWhite.png";
 import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import { Link } from "react-router-dom";
