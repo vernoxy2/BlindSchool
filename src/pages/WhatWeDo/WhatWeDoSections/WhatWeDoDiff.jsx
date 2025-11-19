@@ -76,7 +76,7 @@ const WhatWeDoCard = ({ img, svg, title, subtitle, text }) => {
             {title}
           </h2>
         </div>
-        <p className="text-start text-textcolor font-bold w-2/3 flex gap-4">
+        <p className="text-start text-textcolor font-bold w-2/3 flex gap-5">
           <span className="h-10 bg-primary w-1 p-0.5 flex flex-col my-auto rounded-lg"></span>
           {subtitle}
         </p>
