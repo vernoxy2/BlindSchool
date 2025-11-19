@@ -6,8 +6,8 @@ import OurJourney from "./AboutSections/OurJourney ";
 import Expanding from "./AboutSections/Expanding";
 import OurMissionVision from "./AboutSections/OurMissionVision";
 import Certificate from "./AboutSections/Certificate";
-import Help from "../Homepage/HomePageSections/Help";
-import SocialPage from "../Homepage/HomePageSections/SocialPage";
+import Help from "../../component/Help";
+import SocialPage from "../../component/SocialPage";
 
 
 const about = () => {

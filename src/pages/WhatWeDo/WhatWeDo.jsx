@@ -3,8 +3,8 @@ import Head from './WhatWeDoSections/Head';
 import WhatWeDoDiff from './WhatWeDoSections/WhatWeDoDiff';
 import Card from './WhatWeDoSections/card';
 import GetInvolved from './WhatWeDoSections/GetInvolved';
-import Help from '../Homepage/HomePageSections/Help';
-import SocialPage from '../Homepage/HomePageSections/SocialPage';
+import Help from '../../component/Help';
+import SocialPage from '../../component/SocialPage';
 
 const WhatWeDo = () => {
   return (
