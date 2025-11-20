@@ -32,7 +32,7 @@ const GetInvolved = () => {
   return (
     <section
       style={{ backgroundImage: `url(${Involved})` }}
-      className="text-center rounded-2xl m-2 py-10 bg-cover bg-center bg-no-repeat"
+      className="text-center rounded-2xl m-4 py-10 bg-cover bg-center bg-no-repeat"
     >
       <h1 className="text-white">Get Involved</h1>
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

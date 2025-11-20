@@ -11,6 +11,7 @@ import Svg3 from "../../../assets/WeDoPageImgs/Cards/Icon3.svg"
 import Svg4 from "../../../assets/WeDoPageImgs/Cards/Icon4.svg";
 import Svg5 from "../../../assets/WeDoPageImgs/Cards/Icon5.svg";
 import Svg6 from "../../../assets/WeDoPageImgs/Cards/Icon6.svg";
+import DonateNow from "../../../component/DonateNow";
 
 const data = [
   {
@@ -67,12 +68,12 @@ const data = [
 // New Card Component
 const WhatWeDoCard = ({ img, svg, title, subtitle, text }) => {
   return (
-    <div className="shadow-md hover:-translate-y-5 duration-300 transition-transform group flex flex-col h-full">
+    <div className="shadow-md hover:-translate-y-5 duration-300 transition-transform group/card flex flex-col h-full relative">
       <img src={img} alt="" className="w-full" />
       <div className="space-y-4 px-6 py-10">
         <div className="flex flex-row justify-center items-center gap-5">
           <img src={svg} alt="" />
-          <h2 className="text-start text-[#B9B9B9] group-hover:text-primary duration-200 transition-colors font-bold">
+          <h2 className="text-start text-[#B9B9B9] group-hover/card:text-primary duration-200 transition-colors font-bold">
             {title}
           </h2>
         </div>
@@ -81,6 +82,7 @@ const WhatWeDoCard = ({ img, svg, title, subtitle, text }) => {
           {subtitle}
         </p>
         <p>{text}</p>
+        <DonateNow className="absolute top-0 right-4 hover:bg-white rounded-xl group/btn" className2="group-hover/btn:text-primary duration-200 transition-colors" className3="group-hover/btn:text-primary duration-200 transition-colors"/>
       </div>
     </div>
   );
@@ -92,7 +94,7 @@ const WhatWeDoDiff = () => {
       <section className="text-center space-y-5">
         <h1>What We Do</h1>
         <h2 className="text-textcolor font-bold">How We Make a Difference</h2>
-        <BaseLine className="bg-textcolor" />
+        <BaseLine className="bg-textcolor mx-auto" />
         <p className="md:w-4/5 xl:w-1/2 mx-auto container ">
           At Valsad National Association for the Blind (NAB), Gujarat, we are
           dedicated to empowering visually and physically challenged individuals

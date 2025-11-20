@@ -1,7 +1,7 @@
 import React from "react";
 import Fest1 from "../../../assets/DonatePageImgs/Festivals/Fest1.webp";
-import Fest2 from "../../../assets/DonatePageImgs/Festivals/Fest1.webp";
-import Fest3 from "../../../assets/DonatePageImgs/Festivals/Fest1.webp";
+import Fest2 from "../../../assets/DonatePageImgs/Festivals/Fest2.webp";
+import Fest3 from "../../../assets/DonatePageImgs/Festivals/Fest3.webp";
 import BaseLine from "../../../component/BaseLine";
 import DonateNow from "../../../component/DonateNow";
 
@@ -14,13 +14,13 @@ const Data = [
   },
   {
     id: 2,
-    img: Fest1,
+    img: Fest2,
     title: "Sponsor a Festive Meal",
     sub: "Spread happiness by funding a special meal for our students during festivals.",
   },
   {
     id: 3,
-    img: Fest1,
+    img: Fest3,
     title: "Sponsor a Festive Meal",
     sub: "Spread happiness by funding a special meal for our students during festivals.",
   },
