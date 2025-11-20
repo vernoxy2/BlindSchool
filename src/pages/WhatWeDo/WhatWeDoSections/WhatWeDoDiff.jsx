@@ -32,7 +32,7 @@ const data = [
   {
     id: 3,
     img: Card3,
-    svg: Svg3,
+    // svg: Svg3,
     title: "Accommodation, Food & Daily Care",
     subtitle: "NAB Valsad is not just a place to study it’s a home for over 190 students.",
     text: "We offer free accommodation, nutritious meals, and constant care, creating a safe, loving community where every student belongs.",
