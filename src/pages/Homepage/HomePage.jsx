@@ -3,14 +3,13 @@ import Header from './HomePageSections/Header';
 import Head2 from "../../assets/HomepageImgs/Head2.png";
 import Head3 from "../../assets/HomepageImgs/Head3.png";
 import HeadImg from "../../assets/HomepageImgs/HeadImg.png";
-import Values from './HomePageSections/Values';
 import ValuesApp from './HomePageSections/ValueApp';
 import AboutUS from './HomePageSections/AboutUs';
-import Help from './HomePageSections/Help';
+import Help from '../../component/Help';
 import HowCanYouHelp from './HomePageSections/HowCanYouHelp';
 import OurImpact from './HomePageSections/OurImpact';
 import OurPartner from './HomePageSections/OurPartner';
-import SocialPage from './HomePageSections/SocialPage';
+import SocialPage from '../../component/SocialPage';
 
 const HomePage = () => {
   const slides = [

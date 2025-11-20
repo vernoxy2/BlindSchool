@@ -7,12 +7,12 @@
     @apply py-10 md:py-20 space-y-5 md:space-y-10 ;
   }
   h1 {
-    @apply text-primary text-5xl font-bold text-center;
+    @apply text-primary text-3xl md:text-4xl lg:text-5xl font-bold text-center;
   }
   h2 {
     @apply text-xl lg:text-2xl 
   }
   p{
-    @apply text-base
+    @apply text-sm md:text-base
   }
 }
