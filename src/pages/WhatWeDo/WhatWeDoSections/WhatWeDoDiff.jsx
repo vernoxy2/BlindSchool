@@ -7,7 +7,7 @@ import Card4 from "../../../assets/WeDoPageImgs/Cards/Card4.png";
 import Card5 from "../../../assets/WeDoPageImgs/Cards/Card5.png";
 import Svg1 from "../../../assets/WeDoPageImgs/Cards/Svg1.svg";
 import Svg2 from "../../../assets/WeDoPageImgs/Cards/Svg2.svg";
-import Svg3 from "../../../assets/WeDoPageImgs/Cards/Svg3.svg";
+// import Svg3 from "../../../assets/WeDoPageImgs/Cards/Svg3.svg";
 import Svg4 from "../../../assets/WeDoPageImgs/Cards/Svg4.svg";
 import Svg5 from "../../../assets/WeDoPageImgs/Cards/Svg5.svg";
 import Svg6 from "../../../assets/WeDoPageImgs/Cards/Svg6.svg";
