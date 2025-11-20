@@ -3,7 +3,7 @@ import Header from "../../component/Header";
 import ContactUs from "../../assets/ContactUsImgs/ContacUs.png";
 import GetAQuote from "./ContactSections/GetAQuote";
 import GoogleMap from "./ContactSections/GoogleMap";
-import SocialPage from "../Homepage/HomePageSections/SocialPage";
+import SocialPage from "../../component/SocialPage";
 
 const Contact = () => {
   return (
