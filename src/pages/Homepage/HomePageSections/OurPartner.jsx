@@ -1,11 +1,50 @@
-import React from 'react'
+import React from "react";
+import NCR from "../../../assets/HomepageImgs/OurParners/NCR.svg";
+import SAXO from "../../../assets/HomepageImgs/OurParners/saxo.svg";
+import IndianOil from "../../../assets/HomepageImgs/OurParners/indianOil.svg";
+import SBI from "../../../assets/HomepageImgs/OurParners/SBI.svg";
+import NTPC from "../../../assets/HomepageImgs/OurParners/NTPC.svg";
+import UnionBank from "../../../assets/HomepageImgs/OurParners/UnionBank.svg";
+import { Baseline } from "lucide-react";
+import BaseLine from "../../../component/BaseLine";
 
 const OurPartner = () => {
-  return (
-    <div className='text-center'>
-      Our Partners
-    </div>
-  )
-}
+  const logos = [
+    { id: "NCR", src: NCR },
+    { id: "saxo", src: SAXO },
+    { id: "IndianOil", src: IndianOil },
+    { id: "SBI", src: SBI },
+    { id: "Ntpc", src: NTPC },
+    { id: "UnionBank", src: UnionBank },
+  ];
 
-export default OurPartner
+  return (
+    <section className="container py-10 px-0">
+      <h1>Our Partners</h1>
+      <h2 className="font-bold text-center">
+        We are happy to collaborate with our partners
+      </h2>
+      <p className="text-center mb-6">
+        Join NAB Delhi’s mission with partners like GAIL, AON, Fena Foundation,<br />
+        and Inner Wheel to empower and uplift the visually impaired.
+      </p>
+     <BaseLine />
+
+      <div className="overflow-hidden whitespace-nowrap py-6 relative scrollbar-hide">
+        <div className="logo-slider">
+          {/* Duplicate logos to make infinite loop */}
+          {[...logos, ...logos].map((logo, i) => (
+            <img
+              key={logo.id + i}
+              src={logo.src}
+              alt={logo.id}
+              className="h-14 mx-10 inline-block"
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default OurPartner;

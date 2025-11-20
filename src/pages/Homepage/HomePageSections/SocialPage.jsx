@@ -3,6 +3,7 @@ import navLogo from "../../../assets/HomepageImgs/nablogoWhite.png";
 import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import { Link } from "react-router-dom";
+// import ScrollToTop from "./ScrollToTop";
 
 const SocialPage = () => {
   return (
@@ -33,10 +34,10 @@ const SocialPage = () => {
             Our Pages
           </h3>
           <ul className="space-y-2 text-sm">
-            <li ><Link to="/Header"/>Home Page</li>
-            <li>About Us Page</li>
-            <li>What We Do</li>
-            <li>CSR Page</li>
+            <li ><Link to="/">Home Page</Link></li>
+            <li><Link to="/About">About Us Page</Link></li>
+            <li><Link to="/WhatWeDo">What We Do</Link></li>
+            <li><Link to="/CSR">CSR Page</Link></li>
           </ul>
         </div>
 
@@ -115,12 +116,7 @@ const SocialPage = () => {
           </div>
         </div>
       </div>
-
       <hr className="mt-12 opacity-40" />
-
-      {/* <p className="text-center text-xs opacity-70 mt-5">
-        © {new Date().getFullYear()} NAB – All Rights Reserved.
-      </p> */}
     </footer>
   );
 };
