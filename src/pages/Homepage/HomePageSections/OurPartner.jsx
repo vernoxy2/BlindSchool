@@ -1,11 +1,10 @@
 import React from "react";
 import NCR from "../../../assets/HomepageImgs/OurParners/NCR.svg";
 import SAXO from "../../../assets/HomepageImgs/OurParners/SAXO.svg";
-import IndianOil from "../../../assets/HomepageImgs/OurParners/indianOil.svg";
+import IndianOil from "../../../assets/HomepageImgs/OurParners/IndianOil.svg";
 import SBI from "../../../assets/HomepageImgs/OurParners/SBI.svg";
 import NTPC from "../../../assets/HomepageImgs/OurParners/NTPC.svg";
 import UnionBank from "../../../assets/HomepageImgs/OurParners/UnionBank.svg";
-import { Baseline } from "lucide-react";
 import BaseLine from "../../../component/BaseLine";
 
 const OurPartner = () => {
