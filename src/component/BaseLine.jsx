@@ -1,8 +1,8 @@
 import React from 'react'
 
-const BaseLine = () => {
+const BaseLine = ({className = ''}) => {
   return (
-    <div className='bg-primary p-[1px] w-40 mx-auto rounded-xl'>
+    <div className={`bg-primary p-[1px] w-40 mx-auto rounded-xl ${className}`}>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import WaysYouCanHelp from "./DonateNowSections/WaysYouCanHelp";
 import Cards from "./DonateNowSections/Cards";
 import CelebrateFestivals from "./DonateNowSections/CelebrateFestivals";
 import Header from "../../component/Header";
-import Help from "../Homepage/HomePageSections/Help";
+import Help from "../../component/Help";
 
 const DonateNow = () => {
   return (
@@ -25,6 +25,7 @@ const DonateNow = () => {
       {/* <Cards /> */}
       <CelebrateFestivals />
       <Help/>
+      
     </div>
   );
 };
