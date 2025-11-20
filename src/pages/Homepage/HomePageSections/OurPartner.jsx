@@ -1,6 +1,6 @@
 import React from "react";
 import NCR from "../../../assets/HomepageImgs/OurParners/NCR.svg";
-import SAXO from "../../../assets/HomepageImgs/OurParners/saxo.svg";
+import SAXO from "../../../assets/HomepageImgs/OurParners/SAXO.svg";
 import IndianOil from "../../../assets/HomepageImgs/OurParners/indianOil.svg";
 import SBI from "../../../assets/HomepageImgs/OurParners/SBI.svg";
 import NTPC from "../../../assets/HomepageImgs/OurParners/NTPC.svg";
@@ -11,7 +11,7 @@ import BaseLine from "../../../component/BaseLine";
 const OurPartner = () => {
   const logos = [
     { id: "NCR", src: NCR },
-    { id: "saxo", src: SAXO },
+    { id: "SAXO ", src: SAXO },
     { id: "IndianOil", src: IndianOil },
     { id: "SBI", src: SBI },
     { id: "Ntpc", src: NTPC },
