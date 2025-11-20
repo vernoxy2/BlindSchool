@@ -7,7 +7,7 @@ import Card4 from "../../../assets/WeDoPageImgs/Cards/Card4.png";
 import Card5 from "../../../assets/WeDoPageImgs/Cards/Card5.png";
 import Svg1 from "../../../assets/WeDoPageImgs/Cards/Svg1.svg";
 import Svg2 from "../../../assets/WeDoPageImgs/Cards/Svg2.svg";
-import Svg3 from "../../../assets/WeDoPageImgs/Cards/Svg3.svg";
+// import Svg3 from "../../../assets/WeDoPageImgs/Cards/Svg3.svg";
 import Svg4 from "../../../assets/WeDoPageImgs/Cards/Svg4.svg";
 import Svg5 from "../../../assets/WeDoPageImgs/Cards/Svg5.svg";
 import Svg6 from "../../../assets/WeDoPageImgs/Cards/Svg6.svg";
@@ -32,7 +32,7 @@ const data = [
   {
     id: 3,
     img: Card3,
-    svg: Svg3,
+    // svg: Svg3,
     title: "Accommodation, Food & Daily Care",
     subtitle: "NAB Valsad is not just a place to study it’s a home for over 190 students.",
     text: "We offer free accommodation, nutritious meals, and constant care, creating a safe, loving community where every student belongs.",
@@ -67,7 +67,7 @@ const data = [
 // New Card Component
 const WhatWeDoCard = ({ img, svg, title, subtitle, text }) => {
   return (
-    <div className="shadow-md hover:-translate-y-4 duration-300 transition-transform group flex flex-col h-full">
+    <div className="shadow-md hover:-translate-y-5 duration-300 transition-transform group flex flex-col h-full">
       <img src={img} alt="" className="w-full" />
       <div className="space-y-4 px-6 py-10">
         <div className="flex flex-row justify-center items-center gap-5">
