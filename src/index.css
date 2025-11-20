@@ -19,6 +19,14 @@
   p{
     @apply text-sm md:text-base
   }
+  input {
+  @apply p-5 bg-[#F4F4F4] rounded-md text-textcolor placeholder:text-black 
+         focus:outline-none focus:ring-2 focus:ring-primary;
+}
+
+  textarea{
+    @apply p-5 bg-[#F4F4F4] rounded-md text-textcolor flex flex-col placeholder:text-black focus:outline-none focus:ring-2 focus:ring-primary
+  }
 }
 
 /* Hide scrollbar */
