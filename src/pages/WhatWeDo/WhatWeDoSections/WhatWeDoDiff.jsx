@@ -67,7 +67,7 @@ const data = [
 // New Card Component
 const WhatWeDoCard = ({ img, svg, title, subtitle, text }) => {
   return (
-    <div className="shadow-md hover:-translate-y-4 duration-300 transition-transform group flex flex-col h-full">
+    <div className="shadow-md hover:-translate-y-5 duration-300 transition-transform group flex flex-col h-full">
       <img src={img} alt="" className="w-full" />
       <div className="space-y-4 px-6 py-10">
         <div className="flex flex-row justify-center items-center gap-5">
