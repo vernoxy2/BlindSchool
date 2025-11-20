@@ -19,7 +19,7 @@ const JoinHandsCSR = () => {
           Rajbhai, whose mission was to transform lives through opportunity and
           inclusion, we remain committed to carrying his legacy forward.
         </p>
-        <BaseLine className="mx-0" />
+        <BaseLine className="mr-auto" />
       </div>
     </section>
   );
