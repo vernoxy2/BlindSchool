@@ -21,7 +21,6 @@ const about = () => {
       <OurMissionVision />
       <Certificate />
       <Help />
-      <SocialPage />
     </div>
   );
 };
