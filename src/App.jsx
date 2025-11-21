@@ -6,6 +6,7 @@ import WhatWeDo from "./pages/WhatWeDo/WhatWeDo";
 import CSR from "./pages/CSR/CSR";
 import Contact from "./pages/ContactUs/Contact";
 import DonateNow from "./pages/DonateNow/DonateNow";
+import SocialPage from "./component/SocialPage";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/donatenow" element={<DonateNow />} />
         </Routes>
+        <SocialPage />
       </BrowserRouter>
     </div>
   );

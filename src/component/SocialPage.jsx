@@ -1,18 +1,61 @@
 import React from "react";
-import navLogo from "../assets/HomepageImgs/nablogoWhite.png";
+import navLogo from "../assets/HomepageImgs/nablogoWhite.svg";
+import FooterBg from "../assets/FooterBg.png";
 import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import { Link } from "react-router-dom";
-// import ScrollToTop from "./ScrollToTop";
 
 const SocialPage = () => {
+  const socialIcons = [
+    { icon: <FaWhatsapp />, bgClass: "bg-white text-black" },
+    { icon: <FaInstagram />, bgClass: "bg-white text-black" },
+    { icon: <FaFacebookF />, bgClass: "bg-white text-black" },
+  ];
+
+  // const ourPages = [
+  //   { name: "Home Page", path: "/" },
+  //   { name: "About Us Page", path: "/About" },
+  //   { name: "What We Do", path: "/WhatWeDo" },
+  //   { name: "CSR Page", path: "/CSR" },
+  // ];
+
+  const whatWeDo = [
+    "Education & skill Development",
+    "Vocational Training",
+    "Accommodation, Food & Daily Care",
+    "Healthcare & Medical Support",
+    "Community Outreach",
+    "Your Support Matters",
+  ];
+
+  const donateNow = ["Donate your Time", "Donate your Support", "Donate in Kind"];
+
+  const contactInfo = [
+    {
+      title: "Address",
+      icon: <MdLocationOn className="text-5xl p-1 text-primary" />,
+      details: "Civil Hospital Road, Nanakwada, Valsad 396001 Gujarat (India)",
+    },
+    {
+      title: "Contact Number",
+      icon: <MdPhone className="text-3xl text-primary" />,
+      details: "+91 9909006502 \n(02632) 251459, 651164",
+    },
+    {
+      title: "Email",
+      icon: <MdEmail className="text-3xl text-primary" />,
+      details: "nabvalsad@gmail.com \nvalsadnab@gmail.com",
+      underline: true,
+    },
+  ];
+
   return (
-    <footer className="bg-black text-white px-6 md:px-20 py-16">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-12 container">
+    <footer style={{ backgroundImage: `url(${FooterBg})` }} className="bg-black text-white py-16 bg-cover bg-no-repeat bg-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 gap-y-8 container">
         {/* LEFT SECTION */}
-        <div>
+        <div className="md:col-span-2 lg:col-span-1">
           <img src={navLogo} alt="Logo" className="h-24 mb-5" />
-          <p className="text-sm leading-relaxed max-w-xs">
+          <p className="text-sm leading-relaxed w-2/3 lg:max-w-60">
             Empowering the blind through education, inclusion, and equal
             opportunities.
           </p>
@@ -21,25 +64,31 @@ const SocialPage = () => {
             Social Info
           </h3>
 
-          <div className="flex gap-4 mt-4">
-            <FaWhatsapp className="text-3xl bg-white text-black p-2 rounded-full" />
-            <FaInstagram className="text-3xl bg-white text-black p-2 rounded-full" />
-            <FaFacebookF className="text-3xl bg-white text-black p-2 rounded-full" />
+          <div className="flex gap-2 md:gap-4 mt-4">
+            {socialIcons.map((social, index) => (
+              <div
+                key={index}
+                className={` text-lg md:text-3xl ${social.bgClass} p-2 rounded-full`}
+              >
+                {social.icon}
+              </div>
+            ))}
           </div>
         </div>
 
         {/* OUR PAGES */}
-        <div>
+        {/* <div>
           <h3 className="font-bold text-lg mb-2 border-b pb-1 w-fit">
             Our Pages
           </h3>
           <ul className="space-y-2 text-sm">
-            <li ><Link to="/">Home Page</Link></li>
-            <li><Link to="/About">About Us Page</Link></li>
-            <li><Link to="/WhatWeDo">What We Do</Link></li>
-            <li><Link to="/CSR">CSR Page</Link></li>
+            {ourPages.map((page, index) => (
+              <li key={index}>
+                <Link to={page.path}>{page.name}</Link>
+              </li>
+            ))}
           </ul>
-        </div>
+        </div> */}
 
         {/* WHAT WE DO */}
         <div>
@@ -47,73 +96,48 @@ const SocialPage = () => {
             What we do
           </h3>
           <ul className="space-y-2 text-sm">
-            <li>Education & skill Development</li>
-            <li>Vocational Training</li>
-            <li>Accommodation, Food & Daily Care</li>
-            <li>Healthcare & Medical Support</li>
-            <li>Community Outreach</li>
-            <li>Your Support Matters</li>
+            {whatWeDo.map((item, index) => (
+              <li key={index} className="active:font-bold">{item}</li>
+            ))}
           </ul>
         </div>
 
         {/* DONATE NOW */}
-        <div>
+        <div >
           <h3 className="font-bold text-lg mb-2 border-b pb-1 w-fit">
             Donate Now
           </h3>
           <ul className="space-y-2 text-sm">
-            <li>Donate your Time</li>
-            <li>Donate your Suppprt</li>
-            <li>Donate in Kind</li>
+            {donateNow.map((item, index) => (
+              <li key={index} className="active:font-bold">{item}</li>
+            ))}
           </ul>
         </div>
 
         {/* CONTACT US */}
-        <div>
+        <div className="md:col-span-2 lg:col-span-1">
           <h3 className="font-bold text-lg mb-2 border-b pb-1 w-fit">
             Contact Us
           </h3>
 
-          {/* Address */}
-          <div className="flex gap-5 mt-3 ">
-            <div className="h-10 w-10 bg-white">
-              <MdLocationOn className="text-4xl text-primary bg-white flex justify-center items-center" />
+          {contactInfo.map((info, index) => (
+            <div className="flex gap-3 mt-4" key={index}>
+              <div className="h-12 w-12 bg-white text-primary rounded-md flex justify-center items-center">
+                {info.icon}
+              </div>
+              <div>
+                <h2 className="font-bold text-[20px]">{info.title}</h2>
+                <p className={`text-sm ${info.underline ? "underline" : ""}`}>
+                  {info.details.split("\n").map((line, i) => (
+                    <span key={i}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+                </p>
+              </div>
             </div>
-            <div>
-              <h2 className="font-bold text-[20px]">Address</h2>
-              <p className="text-sm">
-                Civil Hospital Road, Nanakwada, Valsad 396001 Gujarat (India)
-              </p>
-            </div>
-          </div>
-
-          {/* Contact Number */}
-          <div className="flex gap-3 mt-4">
-            <div className="h-10 w-10 bg-white">
-              <MdPhone className="text-4xl  text-primary flex justify-center items-center" />
-            </div>
-            <div>
-              <h2 className="font-bold text-[20px]">Contact Number</h2>
-              <p className="text-sm">
-                +91 9909006502 <br />
-                (02632) 251459, 651164
-              </p>
-            </div>
-          </div>
-
-          {/* Email */}
-          <div className="flex gap-3 mt-4">
-            <div className="h-10 w-10 bg-white">
-              <MdEmail  className="text-4xl text-primary flex justify-center items-center" />
-            </div>
-            <div>
-              <h2 className="font-bold text-[20px]">Email</h2>
-              <p className="text-sm underline">
-                nabvalsad@gmail.com <br />
-                valsadnab@gmail.com
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
       <hr className="mt-12 opacity-40" />
