@@ -39,10 +39,10 @@ const GetInvolved = () => {
         {data.map((item) => (
           <div
             key={item.id}
-            className="shadow-md rounded-2xl flex flex-col items-center justify-center backdrop-blur-sm bg-white/20  py-12 hover:scale-105 duration-300 transition-transform"
+            className="shadow-md rounded-2xl flex flex-col items-center justify-center backdrop-blur-sm bg-white/20 py-8 2xl:py-10  hover:scale-105 duration-300 transition-transform"
           >
             <div className="space-y-8 ">
-              <img src={item.img} alt="" className="border rounded-full p-2 mx-auto"/>
+              <img src={item.img} alt="" className="border rounded-full p-2 mx-auto h-20"/>
               <h2 className="text-center text-white font-bold w-2/3 mx-auto">{item.name}</h2>
             </div>
           </div>

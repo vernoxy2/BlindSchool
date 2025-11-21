@@ -32,7 +32,7 @@ const HowCanYouHelp = () => {
   ];
 
   return (
-    <div className="container w-10/12 space-y-10">
+    <section className="container ">
       <h1>How Can You Help?</h1>
       <p className="md:text-sm text-center">
         Your Support Matters: Let's Transform the Lives of the Visually
@@ -40,11 +40,11 @@ const HowCanYouHelp = () => {
       </p>
       <BaseLine />
 
-      <div className=" grid md:grid-cols-3 gap-6">
+      <div className="lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {carts?.map((item) => (
           <div
             key={item.key}
-            className="space-y-5 flex flex-col items-center justify-center shadow-lg p-9 hover:border-primary border group transition-all duration-300 hover:scale-105"
+            className="space-y-5 flex flex-col items-center justify-between shadow-lg p-9 hover:border-primary border group transition-all duration-300 hover:scale-105"
           >
             <img
               src={item.img}
@@ -69,7 +69,7 @@ const HowCanYouHelp = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

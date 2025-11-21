@@ -18,18 +18,22 @@ const OurPartner = () => {
   ];
 
   return (
-    <section className="container py-10 px-0">
-      <h1>Our Partners</h1>
-      <h2 className="font-bold text-center">
-        We are happy to collaborate with our partners
-      </h2>
-      <p className="text-center mb-6">
-        Join NAB Delhi’s mission with partners like GAIL, AON, Fena Foundation,<br />
-        and Inner Wheel to empower and uplift the visually impaired.
-      </p>
-     <BaseLine />
+    <section className="container py-10 px-0 ">
+      <div className="container space-y-4">
+        <h1>Our Partners</h1>
+        <h2 className="font-bold text-center">
+          We are happy to collaborate with our partners
+        </h2>
+        <p className="text-center mb-6">
+          Join NAB Delhi’s mission with partners like GAIL, AON, Fena
+          Foundation,
+          <br className="hidden md:block" />
+          and Inner Wheel to empower and uplift the visually impaired.
+        </p>
+        <BaseLine />
+      </div>
 
-      <div className="overflow-hidden whitespace-nowrap py-6 relative scrollbar-hide">
+      <div className="overflow-hidden whitespace-nowrap py-6 px-0 relative scrollbar-hide">
         <div className="logo-slider">
           {/* Duplicate logos to make infinite loop */}
           {[...logos, ...logos].map((logo, i) => (

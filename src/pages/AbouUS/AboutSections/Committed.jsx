@@ -10,7 +10,7 @@ const Committed = () => {
     >
       <div className="container">
         {/* content */}
-        <div className="grid grid-cols-2 md:grid-cols-2 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 py-14 space-y-5">
           <div className="space-y-5 ">
             <h1 className="text-primary font-bold text-start">
               Committed to Making a Difference

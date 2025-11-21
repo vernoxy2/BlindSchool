@@ -3,6 +3,7 @@ import navLogo from "../assets/HomepageImgs/NavLogo.png";
 import { CiHeart } from "react-icons/ci";
 import { NavLink, useNavigate } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
+import DonateNow from "./DonateNow";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -17,14 +18,14 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md w-full h-24 flex items-center fixed top-0 left-0 z-50">
+    <nav className="bg-white shadow-md w-full h-24 flex items-center fixed top-0 left-0 z-50 border border-red-700">
       <div className="container mx-auto flex items-center justify-between ">
 
         {/* Logo */}
-        <img src={navLogo} alt="navLogo" className="h-16 md:h-20" />
+        <img src={navLogo} alt="navLogo" className="h-10 md:h-12" />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-16 text-lg font-bold">
+        <ul className="hidden lg:flex gap-16 text-lg font-bold">
           {menuItems.map((item) => (
             <li key={item.name} className="hover:text-blue-600 cursor-pointer">
               <NavLink to={item.path}>{item.name}</NavLink>
@@ -33,7 +34,7 @@ const NavBar = () => {
         </ul>
 
         {/* Desktop Donate Button */}
-        <button
+        {/* <button
           className="hidden md:flex rounded-full bg-primary font-bold text-white gap-2 px-8 py-3"
           onClick={() => navigate("/donatenow")}
         >
@@ -41,7 +42,8 @@ const NavBar = () => {
             <CiHeart />
           </span>
           Donate Now
-        </button>
+        </button> */}
+        <DonateNow />
 
         {/* Mobile Hamburger */}
         <button

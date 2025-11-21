@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import Header from './HomePageSections/Header';
 import Head2 from "../../assets/HomepageImgs/Head2.png";
 import Head3 from "../../assets/HomepageImgs/Head3.png";

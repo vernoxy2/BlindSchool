@@ -4,20 +4,20 @@ import About from "../../../assets/HomepageImgs/About.png";
 
 const Aboutus = () => {
   return (
-    <div
+    <section
       style={{ backgroundImage: `url(${AboutUsImg})` }}
-      className="bg-cover py-28"
+      className="bg-cover"
     >
       <div className="container">
         <h1 className="">
           About us
         </h1>
-        <div className="grid grid-cols-2 py-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 py-14 gap-y-5 ">
           {/* col-1 */}
-          <div className="space-y-5 w-9/12 ">
-            <p className="text-primary font-black  md:text-3xl flex-1 ">
+          <div className="space-y-5 md:w-9/12 ">
+            <h1 className="text-primary font-black  text-start ">
               Together, We Create Brighter Futures
-            </p>
+            </h1>
             <p className="md:text-sm ">
               Valsad National Association for the Blind (NAB), Gujarat is more
               than just an organization — it’s a home to over 190 visually and
@@ -34,11 +34,10 @@ const Aboutus = () => {
             </p>
           </div>
           {/* col-2 */}
-          <img src={About} alt="about" />
-          <div>{/* <img src="About.png" alt="" /> */}</div>
+          <img src={About} alt="about"  />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,21 +3,21 @@ import { CiHeart } from "react-icons/ci";
 
 const Values = ({ cartData }) => {
   return (
-    <div className="container w-10/12 py-20 grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 ">
+    <section className="container space-y-0 2xl:w-11/12 py-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ">
       {cartData?.map((item) => (
         <div
           key={item.key}
-          className="space-y-5  flex flex-col items-center justify-center shadow-lg p-9 hover:bg-primary group duration-500 transition-colors"
+          className="space-y-3 flex flex-col items-center justify-center shadow-lg p-10 hover:bg-primary group duration-500 transition-colors"
         >
-          <img src={item.img} alt={item.MainText} className="w-16 h-16" />
+          <img src={item.img} alt={item.MainText} className="w-16 h-16 hover:backdrop-brightness-200 duration-500 transition-colors" />
 
-          <h1 className=" text-xl font-bold text-primary md:text-2xl text-center uppercase group-hover:text-white duration-500 transition-colors">
+          <h2 className="font-bold text-primary md:text-xl text-center uppercase group-hover:text-white duration-500 transition-colors">
             {item.MainText}
-          </h1>
-          <p className="text-black w-[93%] text-center group-hover:text-white duration-500 transition-colors">{item.SubText}</p>
+          </h2>
+          <p className="text-black text-center group-hover:text-white duration-500 transition-colors">{item.SubText}</p>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
