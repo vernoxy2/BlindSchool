@@ -5,12 +5,13 @@ import Card2 from "../../../assets/WeDoPageImgs/Cards/Card2.png";
 import Card3 from "../../../assets/WeDoPageImgs/Cards/Card3.png";
 import Card4 from "../../../assets/WeDoPageImgs/Cards/Card4.png";
 import Card5 from "../../../assets/WeDoPageImgs/Cards/Card5.png";
-import Svg1 from "../../../assets/WeDoPageImgs/Cards/Svg1.svg";
-import Svg2 from "../../../assets/WeDoPageImgs/Cards/Svg2.svg";
-// import Svg3 from "../../../assets/WeDoPageImgs/Cards/Svg3.svg";
-import Svg4 from "../../../assets/WeDoPageImgs/Cards/Svg4.svg";
-import Svg5 from "../../../assets/WeDoPageImgs/Cards/Svg5.svg";
-import Svg6 from "../../../assets/WeDoPageImgs/Cards/Svg6.svg";
+import Svg1 from "../../../assets/WeDoPageImgs/Cards/Icon1.svg";
+import Svg2 from "../../../assets/WeDoPageImgs/Cards/Icon2.svg";
+import Svg3 from "../../../assets/WeDoPageImgs/Cards/Icon3.svg"
+import Svg4 from "../../../assets/WeDoPageImgs/Cards/Icon4.svg";
+import Svg5 from "../../../assets/WeDoPageImgs/Cards/Icon5.svg";
+import Svg6 from "../../../assets/WeDoPageImgs/Cards/Icon6.svg";
+import DonateNow from "../../../component/DonateNow";
 
 const data = [
   {
@@ -32,7 +33,7 @@ const data = [
   {
     id: 3,
     img: Card3,
-    // svg: Svg3,
+    svg: Svg3,
     title: "Accommodation, Food & Daily Care",
     subtitle: "NAB Valsad is not just a place to study it’s a home for over 190 students.",
     text: "We offer free accommodation, nutritious meals, and constant care, creating a safe, loving community where every student belongs.",
@@ -67,20 +68,21 @@ const data = [
 // New Card Component
 const WhatWeDoCard = ({ img, svg, title, subtitle, text }) => {
   return (
-    <div className="shadow-md hover:-translate-y-5 duration-300 transition-transform group flex flex-col h-full">
+    <div className="shadow-md hover:-translate-y-5 duration-300 transition-transform group/card flex flex-col h-full relative">
       <img src={img} alt="" className="w-full" />
       <div className="space-y-4 px-6 py-10">
         <div className="flex flex-row justify-center items-center gap-5">
           <img src={svg} alt="" />
-          <h2 className="text-start text-[#B9B9B9] group-hover:text-primary duration-200 transition-colors font-bold">
+          <h2 className="text-start text-[#B9B9B9] group-hover/card:text-primary duration-200 transition-colors font-bold">
             {title}
           </h2>
         </div>
-        <p className="text-start text-textcolor font-bold w-2/3 flex gap-5">
+        <p className="text-start text-textcolor font-bold xl:w-2/3 flex gap-5">
           <span className="h-10 bg-primary w-1 p-0.5 flex flex-col my-auto rounded-lg"></span>
           {subtitle}
         </p>
         <p>{text}</p>
+        <DonateNow className="absolute top-0 right-4 hover:bg-white rounded-xl group/btn" className2="group-hover/btn:text-primary duration-200 transition-colors" className3="group-hover/btn:text-primary duration-200 transition-colors"/>
       </div>
     </div>
   );
@@ -92,8 +94,8 @@ const WhatWeDoDiff = () => {
       <section className="text-center space-y-5">
         <h1>What We Do</h1>
         <h2 className="text-textcolor font-bold">How We Make a Difference</h2>
-        <BaseLine className="bg-textcolor" />
-        <p className="w-3/6 mx-auto">
+        <BaseLine className="bg-textcolor mx-auto" />
+        <p className="md:w-4/5 xl:w-1/2 mx-auto container ">
           At Valsad National Association for the Blind (NAB), Gujarat, we are
           dedicated to empowering visually and physically challenged individuals
           to live with confidence, independence, and dignity. Through our
@@ -101,7 +103,7 @@ const WhatWeDoDiff = () => {
           life and a future full of possibilities.
         </p>
       </section>
-      <section className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container pb-10 md:pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-y-16">
         {data.map((item) => (
           <WhatWeDoCard
             key={item.id}
@@ -112,7 +114,7 @@ const WhatWeDoDiff = () => {
             text={item.text}
           />
         ))}
-      </section>
+      </div>
     </>
   );
 };
