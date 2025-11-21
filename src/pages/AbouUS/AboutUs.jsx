@@ -1,19 +1,19 @@
 import React from "react";
-import Head from "./AboutSections/Head";
 import Committed from "./AboutSections/Committed";
-import OurPhilosophy from "./AboutSections/OurPhilosophy";
+import Help from "../../component/Help";
+import SocialPage from "../../component/SocialPage";
+import Header from "../../component/Header";
+import AboutUsHead from "../../assets/AboutUsImgs/AboutUsHead.png";
+import OurPhilosophy from "../AbouUS/AboutSections/OurPhilosophy";
 import OurJourney from "./AboutSections/OurJourney ";
 import Expanding from "./AboutSections/Expanding";
 import OurMissionVision from "./AboutSections/OurMissionVision";
 import Certificate from "./AboutSections/Certificate";
-import Help from "../../component/Help";
-import SocialPage from "../../component/SocialPage";
 
-
-const about = () => {
+const AboutUs = () => {
   return (
     <div>
-      <Head />
+      <Header BgImg={AboutUsHead} CurrntPage={"About Us"} PageLink="/aboutus" />
       <Committed />
       <OurPhilosophy />
       <OurJourney />
@@ -25,4 +25,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default AboutUs;

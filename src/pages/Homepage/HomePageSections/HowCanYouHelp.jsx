@@ -49,7 +49,7 @@ const HowCanYouHelp = () => {
             <img
               src={item.img}
               alt={item.MainText}
-              className="w-16 h-16 transition-all group-hover:brightness-0 group-hover:invert"
+              className="w-16 h-16 transition-all group-hover:brightness-1 group-hover:invert"
             />
 
             <h1 className="text-xl font-bold text-black transition-colors group-hover:text-primary">
