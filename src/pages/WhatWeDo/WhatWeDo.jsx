@@ -20,7 +20,6 @@ const WhatWeDo = () => {
       <WhatWeDoDiff />
       <GetInvolved />
       <Help />
-      <SocialPage />
     </div>
   );
 };

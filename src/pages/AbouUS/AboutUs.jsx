@@ -21,7 +21,6 @@ const AboutUs = () => {
       <OurMissionVision />
       <Certificate />
       <Help />
-      <SocialPage />
     </div>
   );
 };

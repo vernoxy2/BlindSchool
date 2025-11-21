@@ -54,7 +54,6 @@ const HomePage = () => {
       <OurImpact />
       <OurPartner />
       <Help />
-      <SocialPage />
     </div>
   )
 }

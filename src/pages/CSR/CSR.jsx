@@ -28,7 +28,6 @@ const CSR = () => {
       <ImpactMatters />
       <DreamOfSociety />
       <Help />
-      <SocialPage />
     </div>
   );
 };

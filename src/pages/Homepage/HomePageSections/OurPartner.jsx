@@ -46,6 +46,7 @@ const OurPartner = () => {
           ))}
         </div>
       </div>
+
     </section>
   );
 };

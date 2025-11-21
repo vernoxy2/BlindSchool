@@ -19,7 +19,6 @@ const Contact = () => {
       />
       <GetAQuote />
       <GoogleMap />
-      <SocialPage />
     </div>
   );
 };
