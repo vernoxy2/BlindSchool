@@ -1,7 +1,7 @@
 import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
 import NavBar from "../src/component/NavBar";
 import HomePage from "./pages/Homepage/HomePage";
-import About from "./pages/AbouUS/About";
+import AboutUs from "./pages/AbouUS/AboutUs";
 import WhatWeDo from "./pages/WhatWeDo/WhatWeDo";
 import CSR from "./pages/CSR/CSR";
 import Contact from "./pages/ContactUs/Contact";
@@ -14,7 +14,7 @@ const App = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/WhatWeDo" element={<WhatWeDo />} />
           <Route path="/CSR" element={<CSR />} />
           <Route path="/Contact" element={<Contact />} />
