@@ -34,8 +34,8 @@ const SocialPage = () => {
             Our Pages
           </h3>
           <ul className="space-y-2 text-sm">
-            <li ><Link to="/">Home Page</Link></li>
-            <li><Link to="/About">About Us Page</Link></li>
+            <li><Link to="/">Home Page</Link></li>
+            <li><Link to="/aboutus">About Us Page</Link></li>
             <li><Link to="/WhatWeDo">What We Do</Link></li>
             <li><Link to="/CSR">CSR Page</Link></li>
           </ul>
