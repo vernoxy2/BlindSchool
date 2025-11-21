@@ -27,9 +27,9 @@ const OurPartner = () => {
         Join NAB Delhi’s mission with partners like GAIL, AON, Fena Foundation,<br />
         and Inner Wheel to empower and uplift the visually impaired.
       </p>
-     <BaseLine />
+     <BaseLine className="mx-auto"/>
 
-      <div className="overflow-hidden whitespace-nowrap py-6 relative scrollbar-hide">
+      <div className="overflow-hidden whitespace-nowrap py-6 relative scrollbar-hide ">
         <div className="logo-slider">
           {/* Duplicate logos to make infinite loop */}
           {[...logos, ...logos].map((logo, i) => (
@@ -42,6 +42,7 @@ const OurPartner = () => {
           ))}
         </div>
       </div>
+
     </section>
   );
 };
