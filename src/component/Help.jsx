@@ -7,7 +7,7 @@ const Help = () => {
   return (
     <section
       style={{ backgroundImage: `url(${HelpImg})` }}
-      className="bg-cover bg-center bg-no-repeat py-36 my-24"
+      className="bg-cover bg-center bg-no-repeat py-36"
     >
       <div className=" space-y-5 container">
         <h1 className="uppercase font-black md:text-start">

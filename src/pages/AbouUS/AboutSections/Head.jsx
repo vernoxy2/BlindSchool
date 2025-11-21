@@ -1,5 +1,5 @@
 import { CiHeart } from "react-icons/ci";
-import AboutUsHead from "../../../assets/HomepageImgs/AboutUsHead.png"
+import AboutUsHead from "../../../assets/AboutUsImgs/AboutUsHead.png";
 
 const Head = () => {
   return (
