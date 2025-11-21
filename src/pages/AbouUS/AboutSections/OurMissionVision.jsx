@@ -8,7 +8,7 @@ const OurMissionVision = () => {
       style={{ backgroundImage: `url(${mission})` }}
       className="w-full bg-cover bg-center bg-no-repeat py-20 flex justify-center m-3"
     >
-      {/* Transparent Dark Overlay */}
+    
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="relative container mx-auto grid md:grid-cols-2 gap-24">
