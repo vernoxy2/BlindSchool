@@ -12,7 +12,7 @@ const Contact = () => {
         BgImg={ContactUs}
         HeadText={"CONTACT US"}
         SubText={
-          " Contact us to support, learn, or collaborate in empowering visually impaired students toward independence."
+          <>Contact us to support, learn, or <br /> collaborate in empowering visually <br /> impaired students toward <br /> independence.</>
         }
         CurrntPage={"Contact Us"}
         PageLink="/contactus"

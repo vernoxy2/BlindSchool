@@ -53,9 +53,9 @@ const SocialPage = () => {
     <footer style={{ backgroundImage: `url(${FooterBg})` }} className="bg-black text-white py-16 bg-cover bg-no-repeat bg-center">
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 gap-y-8 container">
         {/* LEFT SECTION */}
-        <div className="md:col-span-2 lg:col-span-1">
+        <div className="md:col-span-2 xl:col-span-1">
           <img src={navLogo} alt="Logo" className="h-24 mb-5" />
-          <p className="text-sm leading-relaxed w-2/3 lg:max-w-60">
+          <p className="text-sm leading-relaxed w-2/3 xl:max-w-60">
             Empowering the blind through education, inclusion, and equal
             opportunities.
           </p>
@@ -115,7 +115,7 @@ const SocialPage = () => {
         </div>
 
         {/* CONTACT US */}
-        <div className="md:col-span-2 lg:col-span-1">
+        <div className="md:col-span-2 xl:col-span-1">
           <h3 className="font-bold text-lg mb-2 border-b pb-1 w-fit">
             Contact Us
           </h3>

@@ -16,6 +16,9 @@
   h2 {
     @apply text-xl lg:text-2xl 
   }
+  h3 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-black
+  }
   p{
     @apply text-sm md:text-base
   }

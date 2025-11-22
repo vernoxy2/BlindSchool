@@ -28,7 +28,7 @@ const Data = [
 const CelebrateFestivals = () => {
   return (
     <section className="container">
-      <div className="text-start md:w-2/3 lg:w-1/2  space-y-4">
+      <div className="text-start md:w-4/5 lg:w-2/3 xl:w-1/2 space-y-4">
         <h1 className="text-start pr-8">Celebrate Festivals with NAB Valsad</h1>
         <p>
           Make your festivals more meaningful by celebrating with NAB Valsad.
