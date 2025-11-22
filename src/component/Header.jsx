@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import DefaultBgImg from "../assets/DonatePageImgs/DonateNowImg.webp";
 
-const Header = ({ HeadText, SubText, BgImg = DefaultBgImg, CurrntPage, PageLink }) => {
+const Header = ({ HeadText, SubText, BgImg = DefaultBgImg, CurrntPage, PageLink , className=""}) => {
   return (
     <div
       className=" h-screen bg-cover bg-center "
@@ -11,7 +11,7 @@ const Header = ({ HeadText, SubText, BgImg = DefaultBgImg, CurrntPage, PageLink 
         {/* Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-y-7 container z-10">
           <h1 className="text-white font-black text-5xl">{HeadText}</h1>
-          <h2 className="text-white w-2/6 px-2 text-center text-lg">
+          <h2 className={`text-white px-2 text-center text-lg ${className}`}>
             {SubText}
           </h2>
         </div>

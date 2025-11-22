@@ -44,7 +44,7 @@ const Certificate = () => {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="p-10  max-w-xl">
+          <div className="p-10 max-w-xl">
             <h1 className="text-primary font-bold text-start text-4xl ">
               Certificate and accreditations
             </h1>

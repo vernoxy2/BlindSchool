@@ -43,7 +43,7 @@ const WaysYouCanHelp = () => {
             </div>
             <div className="p-7 pt-12 relative space-y-3">
               <img src={item.icon} alt="" className="absolute -top-12 left-0" />
-              <h2 className="text-start text-primary font-bold w-1/2 flex gap-4">
+              <h2 className="text-start text-primary font-bold w-2/3 2xl:w-1/2 flex gap-4">
                 <span className="h-10 bg-primary w-1 p-0.5 flex flex-col my-auto rounded-lg"></span>{" "}
                 {item.name}
               </h2>

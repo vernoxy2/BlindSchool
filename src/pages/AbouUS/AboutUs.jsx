@@ -13,7 +13,7 @@ import Certificate from "./AboutSections/Certificate";
 const AboutUs = () => {
   return (
     <div>
-      <Header BgImg={AboutUsHead} CurrntPage={"About Us"} PageLink="/aboutus" HeadText={"About US"}  />
+      <Header BgImg={AboutUsHead} CurrntPage={"About Us"} PageLink="/aboutus" HeadText={""}  />
       <Committed />
       <OurPhilosophy />
       <OurJourney />

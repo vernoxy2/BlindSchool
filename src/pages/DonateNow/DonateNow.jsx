@@ -12,7 +12,7 @@ const DonateNow = () => {
       <Header
         HeadText={"DONATE NOW"}
         SubText={
-          "Empowering children through education your donation makes dreams possible."
+          <>Empowering children through <br /> education your donation makes <br /> dreams possible.</>
         }
         CurrntPage={"Donate Now"}
         PageLink="/donatenow"
@@ -21,7 +21,6 @@ const DonateNow = () => {
       <WaysYouCanHelp />
       <CelebrateFestivals />
       <Help/>
-      <SocialPage />
     </div>
   );
 };
