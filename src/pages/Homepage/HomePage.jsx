@@ -51,7 +51,7 @@ const HomePage = () => {
       <ValuesApp />
       <AboutUS />
       <HowCanYouHelp />
-      <OurImpact />
+      {/* <OurImpact /> */}
       <OurPartner />
       <Help />
     </div>
