@@ -13,7 +13,18 @@ import Certificate from "./AboutSections/Certificate";
 const AboutUs = () => {
   return (
     <div>
-      <Header BgImg={AboutUsHead} CurrntPage={"About Us"} PageLink="/aboutus" HeadText={""}  />
+      <Header
+        BgImg={AboutUsHead}
+        CurrntPage={"About Us"}
+        PageLink="/aboutus"
+        HeadText={"About us"}
+        SubText={
+          <>
+            Empowering visually impaired children through <br className="hidden md:block" />education, care, and
+            opportunities for a <br className="hidden md:block" />brighter, independent future.
+          </>
+        }
+      />
       <Committed />
       <OurPhilosophy />
       <OurJourney />
