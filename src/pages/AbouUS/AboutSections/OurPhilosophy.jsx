@@ -4,7 +4,7 @@ import BaseLine from "../../../component/BaseLine";
 
 const OurPhilosophy = () => {
   return (
-    <section className="text-center flex flex-col items-center">
+    <section className="text-center flex flex-col items-center container">
       <h1>Our Philosophy</h1>
       <img src={philosophy} alt="philosophy" className="text-center " />
       <p className="text-xl font-bold max-w-2xl mb-6">
