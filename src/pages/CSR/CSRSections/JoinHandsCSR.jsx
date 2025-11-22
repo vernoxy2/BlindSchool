@@ -4,12 +4,12 @@ import BaseLine from "../../../component/BaseLine";
 
 const JoinHandsCSR = () => {
   return (
-    <section className="container grid grid-cols-1 lg:grid-cols-2 gap-8">
-      <div>
+    <section className="container space-y-0 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="flex items-center justify-center">
         <img src={JoinHandsImg} alt="" />
       </div>
       <div className="flex flex-col gap-6 items-start justify-center">
-        <h1 className="font-bold text-start mb-3 lg:mb-6 lg:w-[90%]">
+        <h1 className="font-bold text-start xl:w-[90%]">
           Join Hands with NAB Valsad to Continue a Legacy of Impact
         </h1>
         <p className="lg:w-[90%]">
