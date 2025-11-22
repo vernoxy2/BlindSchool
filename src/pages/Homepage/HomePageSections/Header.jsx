@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CiHeart } from "react-icons/ci";
+import DonateNow from "../../../component/DonateNow";
 
 const Header = ({
   slides,
@@ -29,20 +30,15 @@ const Header = ({
         opacity: fade ? opacity : 0.7, // fade smoothly
         transition: `opacity ${fadeDuration}ms ease-in-out`,
       }}
-      className="bg-cover bg-center bg-no-repeat mt-24 lg:h-screen max-h-[700px]"
+      className="bg-cover bg-center bg-no-repeat mt-28 lg:h-screen max-h-[800px]"
     >
       <div className="container grid grid-cols-1 md:grid-cols-2 h-full">
-        <div className="space-y-5 lg:w-[80%] py-16 lg:py-0 md:py-24 h-full flex flex-col items-start justify-center">
-          <h1 className="text-start xl:text-6xl font-black text-white text-3xl uppercase">
+        <div className="space-y-5 xl:w-[80%] py-16 lg:py-0 md:py-24 h-full flex flex-col items-start justify-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-start font-black text-white uppercase">
             {current.MainText}
           </h1>
           <h2 className="text-white lg:w-[90%]">{current.SubText}</h2>
-           <button className="rounded-full bg-primary font-bold text-white flex gap-2 px-8 py-3">
-            <span className="text-2xl">
-              <CiHeart />
-            </span>
-            Donate Now
-          </button>
+          <DonateNow className="ml-0"/>
         </div>
       </div>
     </div>

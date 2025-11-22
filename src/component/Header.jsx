@@ -4,7 +4,7 @@ import DefaultBgImg from "../assets/DonatePageImgs/DonateNowImg.webp";
 const Header = ({ HeadText, SubText, BgImg = DefaultBgImg, CurrntPage, PageLink , className=""}) => {
   return (
     <div
-      className=" h-screen bg-cover bg-center "
+      className=" h-screen bg-cover bg-center mt-24 "
       style={{ backgroundImage: `url(${BgImg})` }}
     >
       <div className="relative px-14 lg:px-28 w-full h-full">

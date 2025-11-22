@@ -12,9 +12,9 @@ const Aboutus = () => {
         <h1 className="">
           About us
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 py-14 gap-y-5 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 py-14 gap-y-8 ">
           {/* col-1 */}
-          <div className="space-y-5 md:w-9/12 ">
+          <div className="space-y-5 md:w-11/12 xl:w-9/12 order-2 lg:order-1">
             <h1 className="text-primary font-black  text-start ">
               Together, We Create Brighter Futures
             </h1>
@@ -34,7 +34,9 @@ const Aboutus = () => {
             </p>
           </div>
           {/* col-2 */}
-          <img src={About} alt="about"  />
+          <div className="flex flex-col justify-center order-1 lg:order-2">
+            <img src={About} alt="about"  />
+          </div>
         </div>
       </div>
     </section>

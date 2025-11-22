@@ -30,7 +30,7 @@ const OurPartner = () => {
           <br className="hidden md:block" />
           and Inner Wheel to empower and uplift the visually impaired.
         </p>
-        <BaseLine />
+        <BaseLine className="mx-auto" />
       </div>
 
       <div className="overflow-hidden whitespace-nowrap py-6 px-0 relative scrollbar-hide">
