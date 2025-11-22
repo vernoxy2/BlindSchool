@@ -16,7 +16,7 @@ const CSR = () => {
         BgImg={CSRHead}
         HeadText={"CSR"}
         SubText={
-          "Partner with us through CSR initiatives to empower visually impaired lives with education, skills, and independence."
+          <>Partner with us through CSR initiatives to empower <br className="hidden md:block" /> visually impaired lives with education, skills, and <br className="hidden md:block" /> independence.</>
         }
         CurrntPage={"CSR"}
         PageLink="/csr"

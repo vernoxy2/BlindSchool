@@ -18,13 +18,13 @@ const ImpactMatters = () => {
         <h2 className="font-bold text-white">How We Make a Difference</h2>
         <BaseLine className="bg-white mx-auto" />
       </div>
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         {Data.map((item) => (
           <div
             key={item.id}
-            className="shadow-md rounded-2xl flex flex-col items-center justify-center backdrop-blur-sm bg-white/20 px-14 py-12 hover:scale-105 duration-300 transition-transform"
+            className="shadow-md rounded-2xl flex flex-col items-center justify-center backdrop-blur-sm bg-white/20 p-8 hover:scale-105 duration-300 transition-transform"
           >
-            <div className="space-y-8">
+            <div className="flex flex-col items-center justify-between gap-6">
               <h2 className="text-center text-white font-bold ">{item}</h2>
               <BaseLine className="bg-white w-[80%] mx-auto" />
             </div>

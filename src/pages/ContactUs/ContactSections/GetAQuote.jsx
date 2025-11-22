@@ -29,7 +29,7 @@ const GetAQuote = () => {
       <div className="md:shadow-2xl py-16 grid grid-cols-1 lg:grid-cols-2 gap-y-16 rounded-md">
         {/* Contact Information div */}
         <div className="bg-primary w-5/6 xl:w-4/6 mx-auto px-4 md:px-8 py-10 flex flex-col gap-3 rounded">
-          <h2 className="text-white text-4xl font-bold mx-auto text-center bg-primary ">
+          <h2 className="text-white text-4xl font-bold mx-auto text-center bg-primary w-[105% ]">
             Contact Information
           </h2>
           <BaseLine className="bg-white w-full" />
