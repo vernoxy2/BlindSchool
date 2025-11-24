@@ -8,21 +8,21 @@ import Help3 from "../../../assets/DonatePageImgs/canhelp/Help3.webp";
 
 const data = [
   {
-    id: 1,
+    id: "time",
     name: "Donate Your Time",
     sub: "Give a little of your time and make a lifetime of difference. Volunteer to teach, mentor, or simply share moments with our students. Your presence brings confidence, joy, and hope.",
     img: Help1,
     icon: Icon1,
   },
   {
-    id: 2,
+    id: "support",
     name: "Donate Your Support",
     sub: "Your support helps us provide free education, food, healthcare, and accommodation to our 190+ students.Every rupee you give helps someone live with dignity and independence.",
     img: Help2,
     icon: Icon2,
   },
   {
-    id: 3,
+    id: "kind",
     name: "Donate Your Kind",
     sub: "You can also help by donating books, clothes, groceries, or assistive tools for our students.Every thoughtful gift brings comfort, learning, and care to those who need it most.",
     img: Help3,
@@ -31,13 +31,13 @@ const data = [
   // Add more items as needed
 ];
 
-const WaysYouCanHelp = () => {
+const   WaysYouCanHelp = () => {
   return (
     <section className="text-center container py-10 -mt-40">
-      <h1 className=" font-bold pb-10">Ways You Can Help</h1>
+      <h1 data-aos="fade-up" className=" font-bold pb-10">Ways You Can Help</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {data.map((item) => (
-          <div key={item.id} className="shadow-md rounded-lg hover:-translate-y-5 duration-300 transition-transform">
+          <div data-aos="fade-up-right" key={item.id} id={item.id} className="shadow-md rounded-lg hover:-translate-y-5 duration-300 transition-transform">
             <div className="w-full">
               <img src={item.img} alt="" />
             </div>

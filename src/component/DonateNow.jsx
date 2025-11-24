@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 const DonateNow = ({ className = '', className2 = '', className3 = '', onClick }) => {
   return (
     <Link
+    data-aos="zoom-in"
       to="/donatenow"
        onClick={onClick}
       className={`bg-primary py-3 px-6 w-fit rounded-3xl flex items-center gap-2.5 mx-auto md:mx-0 

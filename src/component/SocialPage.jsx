@@ -7,78 +7,93 @@ import { Link } from "react-router-dom";
 
 const SocialPage = () => {
   const socialIcons = [
-    { icon: <FaWhatsapp />, bgClass: "bg-white text-black" },
-    { icon: <FaInstagram />, bgClass: "bg-white text-black" },
-    { icon: <FaFacebookF />, bgClass: "bg-white text-black" },
+    {
+      icon: <FaWhatsapp />,
+      bgClass: "bg-white text-black",
+      link: "https://wa.me/9909006502",
+    },
+    {
+      icon: <FaInstagram />,
+      bgClass: "bg-white text-black",
+      link: "https://instagram.com/jouwpagina",
+    },
+    {
+      icon: <FaFacebookF />,
+      bgClass: "bg-white text-black",
+      link: "https://www.facebook.com/blindschool.valsad",
+    },
   ];
 
-  // const ourPages = [
-  //   { name: "Home Page", path: "/" },
-  //   { name: "About Us Page", path: "/About" },
-  //   { name: "What We Do", path: "/WhatWeDo" },
-  //   { name: "CSR Page", path: "/CSR" },
-  // ];
-
   const whatWeDo = [
-  {
-    id: 1,
-    title: "Education & Skill Development",
-    link: "/whatwedo/education-skill-development"
-  },
-  {
-    id: 2,
-    title: "Vocational Training",
-    link: "/whatwedo/vocational-training"
-  },
-  {
-    id: 3,
-    title: "Accommodation, Food & Daily Care",
-    link: "/whatwedo/accommodation-food-care"
-  },
-  {
-    id: 4,
-    title: "Healthcare & Medical Support",
-    link: "/whatwedo/healthcare-medical-support"
-  },
-  {
-    id: 5,
-    title: "Community Outreach",
-    link: "/whatwedo/community-outreach"
-  },
-  {
-    id: 6,
-    title: "Your Support Matters",
-    link: "/whatwedo/your-support-matters"
-  }
-];
+    {
+      id: 1,
+      title: "Education & Skill Development",
+      link: "/whatwedo#education-skill-development",
+    },
+    {
+      id: 2,
+      title: "Vocational Training",
+      link: "/whatwedo#vocational-training",
+    },
+    {
+      id: 3,
+      title: "Accommodation, Food & Daily Care",
+      link: "/whatwedo#accommodation-food-care",
+    },
+    {
+      id: 4,
+      title: "Healthcare & Medical Support",
+      link: "/whatwedo#healthcare-medical-support",
+    },
+    {
+      id: 5,
+      title: "Community Outreach",
+      link: "/whatwedo#community-outreach",
+    },
+    {
+      id: 6,
+      title: "Your Support Matters",
+      link: "/whatwedo#your-support-matters",
+    },
+  ];
 
-
-  const donateNow = ["Donate your Time", "Donate your Support", "Donate in Kind"];
+  const donateNow = [
+    { label: "Donate your Time", route: "time" },
+    { label: "Donate your Support", route: "  " },
+    { label: "Donate in Kind", route: "kind" },
+  ];
 
   const contactInfo = [
     {
       title: "Address",
       icon: <MdLocationOn className="text-5xl p-1 text-primary" />,
-      details: "Civil Hospital Road, Nanakwada, Valsad 396001 Gujarat (India)",
+      details: "Behind Dutt nagar society, Civil Rd, Valsad, Gujarat 396001",
+      links: ["https://maps.app.goo.gl/FDFgpoDMz22mgf7h9"],
     },
     {
-      title: "Contact Number",
+      title: "Contact Numbers",
       icon: <MdPhone className="text-3xl text-primary" />,
-      details: "+91 9909006502 \n(02632) 251459, 651164",
+      details: ["+91 9909006502", "(02632) 251459", "651164"],
+      links: ["tel:+919909006502", "tel:02632251459", "tel:02632651164"],
     },
     {
-      title: "Email",
+      title: "Emails",
       icon: <MdEmail className="text-3xl text-primary" />,
-      details: "nabvalsad@gmail.com \nvalsadnab@gmail.com",
+      details: ["nabvalsad@gmail.com", "valsadnab@gmail.com"],
+      links: ["mailto:nabvalsad@gmail.com", "mailto:valsadnab@gmail.com"],
       underline: true,
     },
   ];
 
   return (
-    <footer style={{ backgroundImage: `url(${FooterBg})` }} className="bg-black text-white py-16 bg-cover bg-no-repeat bg-center">
+    <footer
+      style={{ backgroundImage: `url(${FooterBg})` }}
+      className="bg-black text-white py-16 bg-cover bg-no-repeat bg-center overflow-hidden"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 gap-y-8 container">
+
         {/* LEFT SECTION */}
-        <div className="md:col-span-2 xl:col-span-1">
+        <div data-aos="fade-right" className="md:col-span-2 xl:col-span-1">
           <img src={navLogo} alt="Logo" className="h-24 mb-5" />
           <p className="text-sm leading-relaxed w-2/3 xl:max-w-60">
             Empowering the blind through education, inclusion, and equal
@@ -95,55 +110,43 @@ const SocialPage = () => {
                 key={index}
                 className={` text-lg md:text-3xl ${social.bgClass} p-2 rounded-full`}
               >
-                {social.icon}
+                <Link to={social.link}>{social.icon}</Link>
               </div>
             ))}
           </div>
         </div>
 
-        {/* OUR PAGES */}
-        {/* <div>
+        {/* WHAT WE DO */}
+        <div data-aos="fade-right">
           <h3 className="font-bold text-lg mb-2 border-b pb-1 w-fit">
-            Our Pages
+            What we do
           </h3>
           <ul className="space-y-2 text-sm">
-            {ourPages.map((page, index) => (
-              <li key={index}>
-                <Link to={page.path}>{page.name}</Link>
+            {whatWeDo.map((item) => (
+              <li key={item.id} className="active:font-bold">
+                <Link to={item.link}>{item.title}</Link>
               </li>
             ))}
           </ul>
-        </div> */}
-
-        {/* WHAT WE DO */}
-        <div>
-  <h3 className="font-bold text-lg mb-2 border-b pb-1 w-fit">
-    What we do
-  </h3>
-  <ul className="space-y-2 text-sm">
-    {whatWeDo.map((item) => (
-      <li key={item.id} className="active:font-bold">
-        <Link to={item.link}>{item.title}</Link>
-      </li>
-    ))}
-  </ul>
-</div>
-
+        </div>
 
         {/* DONATE NOW */}
-        <div >
+        <div data-aos="fade-right">
           <h3 className="font-bold text-lg mb-2 border-b pb-1 w-fit">
             Donate Now
           </h3>
+
           <ul className="space-y-2 text-sm">
-            {donateNow.map((item, index) => (
-              <li key={index} className="active:font-bold">{item}</li>
+            {donateNow.map((item) => (
+              <li key={item.label} className="">
+                <Link to={`/donatenow#${item.route}`}>{item.label}</Link>
+              </li>
             ))}
           </ul>
         </div>
 
         {/* CONTACT US */}
-        <div className="md:col-span-2 xl:col-span-1">
+        <div data-aos="fade-right" className="md:col-span-2 xl:col-span-1">
           <h3 className="font-bold text-lg mb-2 border-b pb-1 w-fit">
             Contact Us
           </h3>
@@ -153,23 +156,46 @@ const SocialPage = () => {
               <div className="h-12 w-12 bg-white text-primary rounded-md flex justify-center items-center">
                 {info.icon}
               </div>
+
               <div>
                 <h2 className="font-bold text-[20px]">{info.title}</h2>
-                <p className={`text-sm ${info.underline ? "underline" : ""}`}>
-                  {info.details.split("\n").map((line, i) => (
-                    <span key={i}>
-                      {line}
-                      <br />
-                    </span>
-                  ))}
-                </p>
+
+                <div className="text-sm">
+                  {Array.isArray(info.details) ? (
+                    info.details.map((detail, i) => (
+                      <div key={i}>
+                        {info.links?.[i] ? (
+                          <Link
+                            to={info.links[i]}
+                            className={`${info.underline ? "underline" : ""}`}
+                          >
+                            {detail}
+                          </Link>
+                        ) : (
+                          <span>{detail}</span>
+                        )}
+                      </div>
+                    ))
+                  ) : info.links?.[0] ? (
+                    <Link
+                      to={info.links[0]}
+                      className={`${info.underline ? "underline" : ""}`}
+                    >
+                      {info.details}
+                    </Link>
+                  ) : (
+                    info.details
+                  )}
+                </div>
               </div>
             </div>
           ))}
         </div>
+
       </div>
+
       <hr className="mt-12 opacity-40" />
-    </footer>
+    </footer> 
   );
 };
 

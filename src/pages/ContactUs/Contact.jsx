@@ -7,7 +7,7 @@ import SocialPage from "../../component/SocialPage";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header
         BgImg={ContactUs}
         HeadText={"CONTACT US"}

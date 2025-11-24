@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BaseLine from "../../../component/BaseLine";
 import Card1 from "../../../assets/WeDoPageImgs/Cards/Card1.png";
 import Card2 from "../../../assets/WeDoPageImgs/Cards/Card2.png";
@@ -21,7 +21,7 @@ import DonateNow from "../../../component/DonateNow";
 
 const data = [
   {
-    id: 1,
+    id: "education-skill-development",
     img: Card1,
     svg: Svg1,
     ssvg: Svg11,
@@ -30,7 +30,7 @@ const data = [
     text: "We empower visually and physically challenged students with education, Braille, computers, and life skills to achieve confidence, independence, and inclusion.",
   },
   {
-    id: 2,
+    id: "vocational-training",
     img: Card2,
     svg: Svg2,
     ssvg: Svg22,
@@ -39,16 +39,17 @@ const data = [
     text: "We train students in diverse vocational skills, empowering them to work, earn, support families, and live independent, dignified lives confidently.",
   },
   {
-    id: 3,
+    id: "accommodation-food-care",
     img: Card3,
     svg: Svg3,
     ssvg: Svg33,
     title: "Accommodation, Food & Daily Care",
-    subtitle: "NAB Valsad is not just a place to study it’s a home for over 190 students.",
+    subtitle:
+      "NAB Valsad is not just a place to study it’s a home for over 190 students.",
     text: "We offer free accommodation, nutritious meals, and constant care, creating a safe, loving community where every student belongs.",
   },
   {
-    id: 4,
+    id: "healthcare-medical-support",
     img: Card4,
     svg: Svg4,
     ssvg: Svg44,
@@ -57,7 +58,7 @@ const data = [
     text: "We ensure students’ health through checkups and care, while outreach identifies and supports people with vision loss toward rehabilitation.",
   },
   {
-    id: 5,
+    id: "community-outreach",
     img: Card5,
     svg: Svg5,
     ssvg: Svg55,
@@ -66,7 +67,7 @@ const data = [
     text: "Our outreach in Valsad villages promotes eye health, connects visually impaired people to care, and fosters inclusion through community awareness.",
   },
   {
-    id: 6,
+    id: "your-support-matters",
     img: Card1,
     svg: Svg6,
     ssvg: Svg66,
@@ -78,15 +79,28 @@ const data = [
 ];
 
 // New Card Component
-const WhatWeDoCard = ({ img, svg, title, subtitle, text, ssvg }) => {
+const WhatWeDoCard = ({ img, svg, title, subtitle, text, ssvg, id }) => {
   return (
-    <div className="shadow-md hover:-translate-y-5 duration-500 transition-transform group/card flex flex-col h-full relative">
+    <div
+          data-aos="fade-up"
+
+      id={id}
+      className="shadow-md hover:-translate-y-5 duration-500 transition-transform group/card flex flex-col h-full relative"
+    >
       <img src={img} alt="" className="w-full" />
 
       <div className="space-y-4 px-6 py-10">
         <div className="flex items-center gap-5">
-          <img src={svg} alt="" className="group-hover/card:hidden duration-300 transition-colors" />
-          <img src={ssvg} alt="" className="hidden group-hover/card:block duration-300 transition-colors" />
+          <img
+            src={svg}
+            alt=""
+            className="group-hover/card:hidden duration-300 transition-colors"
+          />
+          <img
+            src={ssvg}
+            alt=""
+            className="hidden group-hover/card:block duration-300 transition-colors"
+          />
 
           <h2 className="text-start text-[#B9B9B9] group-hover/card:text-primary duration-200 transition-colors font-bold">
             {title}
@@ -110,15 +124,23 @@ const WhatWeDoCard = ({ img, svg, title, subtitle, text, ssvg }) => {
   );
 };
 
-
 const WhatWeDoDiff = () => {
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    if (hash) {
+      const el = document.getElementById(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start", offsetTop: 100 });
+      }
+    }
+  }, []);
   return (
     <>
       <section className="text-center space-y-5">
-        <h1>What We Do</h1>
-        <h2 className="text-textcolor font-bold">How We Make a Difference</h2>
+        <h1 data-aos="fade-up">What We Do</h1>
+        <h2 data-aos="fade-up" className="text-textcolor font-bold">How We Make a Difference</h2>
         <BaseLine className="bg-textcolor mx-auto" />
-        <p className="md:w-4/5 xl:w-1/2 mx-auto container ">
+        <p data-aos="fade-up" className="md:w-4/5 xl:w-1/2 mx-auto container ">
           At Valsad National Association for the Blind (NAB), Gujarat, we are
           dedicated to empowering visually and physically challenged individuals
           to live with confidence, independence, and dignity. Through our
@@ -130,6 +152,7 @@ const WhatWeDoDiff = () => {
         {data.map((item) => (
           <WhatWeDoCard
             key={item.id}
+            id={item.id}
             img={item.img}
             svg={item.svg}
             ssvg={item.ssvg}

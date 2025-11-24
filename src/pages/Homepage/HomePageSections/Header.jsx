@@ -30,7 +30,7 @@ const Header = ({
         opacity: fade ? opacity : 0.7, // fade smoothly
         transition: `opacity ${fadeDuration}ms ease-in-out`,
       }}
-      className="bg-cover bg-center bg-no-repeat mt-28 lg:h-screen max-h-[800px]"
+      className="bg-cover bg-center bg-no-repeat mt-20 h-[550px] xl:h-screen max-h-[800px]"
     >
       <div className="container grid grid-cols-1 md:grid-cols-2 h-full">
         <div className="space-y-5 xl:w-[80%] py-16 lg:py-0 md:py-24 h-full flex flex-col items-start justify-center">

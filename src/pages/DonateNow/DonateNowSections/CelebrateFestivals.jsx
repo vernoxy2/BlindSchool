@@ -29,8 +29,8 @@ const CelebrateFestivals = () => {
   return (
     <section className="container">
       <div className="text-start md:w-4/5 lg:w-2/3 xl:w-1/2 space-y-4">
-        <h1 className="text-start pr-8">Celebrate Festivals with NAB Valsad</h1>
-        <p>
+        <h1 data-aos="fade-up" className="text-start pr-8">Celebrate Festivals with NAB Valsad</h1>
+        <p data-aos="fade-up">
           Make your festivals more meaningful by celebrating with NAB Valsad.
           Whether it's Diwali, Holi, Eid, Christmas, or any festive occasion,
           share your joy by contributing to a cause that transforms lives. Your
@@ -40,7 +40,7 @@ const CelebrateFestivals = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {Data.map((item) => (
-          <div key={item.id} className="s rounded-lg">
+          <div data-aos="fade-up-left" key={item.id} className="s rounded-lg">
             <div className="w-full">
               <img src={item.img} alt="" className="rounded-lg" />
             </div>
@@ -56,7 +56,7 @@ const CelebrateFestivals = () => {
 
       <div className="flex flex-col items-center space-y-5 pt-5">
         <BaseLine />
-        <h2 className="md:w-2/3 lg:w-1/2 text-center font-bold">
+        <h2 data-aos="zoom-in" className="md:w-2/3 lg:w-1/2 text-center font-bold">
           Celebrate the joy of festivals with NAB Valsad and let your generosity
           light up lives.
         </h2>
