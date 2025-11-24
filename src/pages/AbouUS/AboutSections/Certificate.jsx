@@ -35,7 +35,7 @@ const Certificate = () => {
       {/* <div className="container mx-auto  border border-purple-800"> */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 items-start ">
           {/* LEFT IMAGE */}
-          <div className="lg:w-11/12 h-full flex flex-col justify-center">
+          <div data-aos="fade" className="lg:w-11/12 h-full flex flex-col justify-center">
             <img
               src={certificateImg}
               alt="img2"
@@ -45,11 +45,11 @@ const Certificate = () => {
 
           {/* RIGHT CONTENT */}
           <div className="container px-0 md:px-7 lg:px-0 flex flex-col justify-center gap-3 md:gap-5 h-full">
-            <h1 className="text-primary font-bold text-start ">
+            <h1 data-aos="fade-right" className="text-primary font-bold text-start ">
               Certificate and <br /> accreditations
             </h1>
 
-            <p className="text-start ">
+            <p data-aos="fade-right" className="text-start ">
               Transparency and accountability are at the heart of everything we
               do. Valsad National Association for the Blind (NAB), Gujarat
               operates as a registered non-profit organization under Indian law
@@ -58,7 +58,7 @@ const Certificate = () => {
             </p>
 
             <div className="space-y-4 xl:space-y-6">
-              <h2 className="font-bold  ">
+              <h2 data-aos="fade-right" className="font-bold  ">
                 Our key registrations and recognitions include
               </h2>
 
@@ -66,7 +66,7 @@ const Certificate = () => {
 
               <ul className="space-y-3 xl:space-y-5">
                 {list.map((item) => (
-                  <li key={item.id} className="flex items-start gap-3">
+                  <li data-aos="fade-down" key={item.id} className="flex items-start gap-3">
                     <FaRegCheckCircle
                       className="text-primary min-w-5 mt-2"
                       size={18} // FIXED ICON SIZE

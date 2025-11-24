@@ -40,31 +40,34 @@ const HowCanYouHelp = () => {
 
   return (
     <section className="container">
-      <h1>How Can You Help?</h1>
-      <p className="md:text-sm text-center">
+      <h1 data-aos="fade-up" className="font-bold text-center">How Can You Help?</h1>
+      <p data-aos="fade-up" className="md:text-sm text-center">
         Your Support Matters: Let's Transform the Lives of the Visually
         Impaired, Together.
       </p>
       <BaseLine className="mx-auto" />
 
       {/* FLEX VIEW STARTS HERE */}
-      <div className="xl:w-11/12 2xl:w-10/12 mx-auto flex flex-wrap gap-6 justify-center">
+      <div data-aos="fade-up" className="xl:w-11/12 2xl:w-10/12 mx-auto flex flex-wrap gap-6 justify-center">
         {carts?.map((item) => (
           <div
+          
             key={item.key}
             className="space-y-4 flex flex-col items-center justify-between shadow-lg p-9 hover:border-primary border group transition-all duration-300 hover:scale-105
             w-full md:w-[48%]  xl:w-[30%]"
           >
-            <img
+            <div daat-aos="zoom-out" className="relative">
+              <img
               src={item.img}
               alt={item.MainText}
-              className="w-16 h-16 transition-all group-hover:hidden"
+              className="w-16 h-16 transition-all group-hover:opacity-0"
             />
             <img
               src={item.imgHover}
               alt={item.MainText}
-              className="w-16 h-16 transition-all hidden group-hover:block"
+              className="w-16 h-16 transition-all opacity-0 group-hover:opacity-100 absolute top-0"
             />
+            </div>
 
             <h1 className="text-xl font-bold text-black transition-colors group-hover:text-primary">
               {item.MainText}

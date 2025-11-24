@@ -10,10 +10,10 @@ const Help = () => {
       className="bg-cover bg-center bg-no-repeat py-36"
     >
       <div className=" space-y-5 container">
-        <h1 className="uppercase font-black md:text-start">
+        <h1 data-aos="fade-right" className="uppercase font-black md:text-start">
           Small help. <br /> Big hope
         </h1>
-        <h2 className="font-bold text-center md:text-start">
+        <h2 data-aos="fade-right" className="font-bold text-center md:text-start">
           Be part of someone’s brighter <br /> tomorrow.
         </h2>
         <DonateNow />

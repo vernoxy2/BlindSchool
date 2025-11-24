@@ -34,12 +34,13 @@ const Data = [
 const MakeDiff = () => {
   return (
     <section className="text-center container">
-      <h1>
+      <h1 data-aos="fade-up">
         Ways to Make a <br /> Difference
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7">
         {Data.map((item) => (
           <div
+          data-aos="zoom-in"
             key={item.id}
             className="shadow-md rounded-lg group py-8 hover:bg-primary duration-300 transition-colors "
           >

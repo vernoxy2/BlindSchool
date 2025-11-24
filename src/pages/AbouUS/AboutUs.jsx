@@ -12,7 +12,7 @@ import Certificate from "./AboutSections/Certificate";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header
         BgImg={AboutUsHead}
         CurrntPage={"About Us"}
@@ -27,8 +27,8 @@ const AboutUs = () => {
       />
       <Committed />
       <OurPhilosophy />
-      <OurJourney />
-      <Expanding />
+      {/* <OurJourney /> */}
+      {/* <Expanding /> */}
       <OurMissionVision />
       <Certificate />
       <Help />

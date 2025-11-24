@@ -11,7 +11,7 @@ import Help from "../../component/Help";
 
 const CSR = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header
         BgImg={CSRHead}
         HeadText={"CSR"}

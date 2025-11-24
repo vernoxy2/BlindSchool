@@ -29,6 +29,7 @@ const OurMissionVision = () => {
       <div className="relative container mx-auto grid md:grid-cols-2 gap-16 lg:gap-20 xl:gap-24">
         {cards.map((card) => (
           <div
+          data-aos="zoom-out"
             key={card.id}
             className="bg-white/30 backdrop-blur-md rounded-xl p-8 lg:p-9 xl:p-10 text-center shadow-lg"
           >

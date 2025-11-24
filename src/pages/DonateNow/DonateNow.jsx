@@ -8,7 +8,7 @@ import SocialPage from "../../component/SocialPage";
 
 const DonateNow = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header
         HeadText={"DONATE NOW"}
         SubText={

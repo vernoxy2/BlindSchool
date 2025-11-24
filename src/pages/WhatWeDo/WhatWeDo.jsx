@@ -9,11 +9,17 @@ import WeDoHead from "../../assets/WeDoPageImgs/WeDoHead.webp";
 
 const WhatWeDo = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header
         BgImg={WeDoHead}
         HeadText={"WHAT WE DO"}
-        SubText={"Empowering visually impaired children througheducation, care, and skill development to build confidence, independence, and brighter futures"}
+        SubText={
+          <>
+            Empowering visually impaired children <br /> througheducation, care,
+            and skill development <br /> to build confidence, independence, and{" "}
+            <br /> brighter futures
+          </>
+        }
         CurrntPage={"What We Do"}
         PageLink="/whatwedo"
       />

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import navLogo from "../assets/HomepageImgs/NavLogo.svg";
 import { CiHeart } from "react-icons/ci";
-import { NavLink,  } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 import DonateNow from "./DonateNow";
 
@@ -18,10 +18,12 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md w-full py-4 flex items-center fixed top-0 left-0 z-50">
+    <nav className="bg-white shadow-md w-full py-2 flex items-center fixed top-0 left-0 z-50">
       <div className="container mx-auto flex items-center justify-between ">
         {/* Logo */}
-        <img src={navLogo} alt="navLogo" className="h-12 md:h-20" />
+        <Link to="/">
+          <img src={navLogo} alt="navLogo" className="h-12 md:h-16" />
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex gap-4 xl:gap-5">
@@ -34,7 +36,9 @@ const NavBar = () => {
                 to={item.path}
                 className={({ isActive }) =>
                   `hover:text-primary duration-300 transition-colors py-2 px-5 xl:px-7 rounded-full ${
-                    isActive ? "text-primary bg-[#F4F4F4] font-bold duration-300" : ""
+                    isActive
+                      ? "text-primary bg-[#F4F4F4] font-bold duration-300"
+                      : ""
                   }`
                 }
               >
@@ -54,7 +58,7 @@ const NavBar = () => {
           </span>
           Donate Now
         </button> */}
-        <DonateNow className="hidden lg:flex"/>
+        <DonateNow className="hidden lg:flex" />
 
         {/* Mobile Hamburger */}
         <button
@@ -67,7 +71,7 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden bg-white shadow-lg w-full absolute top-16 left-0 transition-all duration-300 overflow-hidden ${
+        className={`lg:hidden bg-white shadow-lg w-full absolute top-20 left-0 transition-all duration-300 overflow-hidden ${
           isOpen ? "h-fit" : "max-h-0"
         }`}
       >
@@ -83,7 +87,7 @@ const NavBar = () => {
           ))}
 
           {/* Mobile Donate Button */}
-          <DonateNow onClick={() => setIsOpen(!isOpen)}/>
+          <DonateNow onClick={() => setIsOpen(!isOpen)} />
         </ul>
       </div>
     </nav>

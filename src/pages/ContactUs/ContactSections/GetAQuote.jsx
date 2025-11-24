@@ -7,26 +7,29 @@ const Data = [
     id: 1,
     icon: <MdLocationOn />,
     name: "Address",
-    text: "Civil Hospital Road,Nanakwada, Valsad - 396001 Gujarat (India)",
+    text: "Behind Dutt nagar society, Civil Rd, Valsad, Gujarat 396001",
+    links: ["https://maps.app.goo.gl/FDFgpoDMz22mgf7h9"],
   },
   {
     id: 2,
     icon: <MdPhone />,
     name: "Phone",
     text: ["+91 9909006502", "(02632) 251459, 651164"],
+    links: ["tel:+919909006502", "tel:02632251459", "tel:02632651164"],
   },
   {
     id: 3,
     icon: <MdEmail />,
     name: "Email",
     text: ["nabvalsad@gmail.com", "valsadnab@gmail.com"],
+    links: ["mailto:nabvalsad@gmail.com", "mailto:valsadnab@gmail.com"],
   },
 ];
 
 const GetAQuote = () => {
   return (
     <section className=" md:container">
-      <div className="md:shadow-2xl py-16 grid grid-cols-1 lg:grid-cols-2 gap-y-16 rounded-md">
+      <div data-aos="fade-up" className="md:shadow-2xl py-16 grid grid-cols-1 lg:grid-cols-2 gap-y-16 rounded-md">
         {/* Contact Information div */}
         <div className="bg-primary w-11/12 md:w-5/6 xl:w-4/6 mx-auto px-6 md:px-8 py-10 flex flex-col gap-3 rounded-md">
           <h2 className="text-white text-4xl font-bold mx-auto text-center bg-primary w-[105% ]">
@@ -42,14 +45,31 @@ const GetAQuote = () => {
                 <div className="text-white bg-primary text-3xl md:text-4xl p-1.5 flex justify-center items-center rounded-sm">
                   {item.icon}
                 </div>
-                <div className="">
+
+                <div>
                   <h3 className="font-bold text-lg text-primary">
                     {item.name}
                   </h3>
+
                   {Array.isArray(item.text) ? (
-                    item.text.map((t, i) => <p key={i}>{t}</p>)
+                    item.text.map((t, i) => (
+                      <p key={i}>
+                        <a href={item.links[i]} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                          {t}
+                        </a>
+                      </p>
+                    ))
                   ) : (
-                    <p>{item.text}</p>
+                    <p>
+                      <a
+                        href={item.links[0]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        {item.text}
+                      </a>
+                    </p>
                   )}
                 </div>
               </div>
@@ -62,33 +82,20 @@ const GetAQuote = () => {
             Get a Quote
           </h1>
           <form className="flex flex-col gap-7">
-            <input
-              type="text"
-              placeholder="Your Name"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-            />
-            <input
-              type="phone"
-              placeholder="Your Phone Number"
-            />
-            <textarea
-              placeholder="Message"
-              rows={6}     
-            ></textarea>
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <input type="phone" placeholder="Your Phone Number" />
+            <textarea placeholder="Message" rows={6}></textarea>
             <button
               type="submit"
               className="bg-primary text-white py-3 md:py-4 rounded-md uppercase text-2xl font-bold"
             >
-             <h2> send message</h2>
+              <h2> send message</h2>
             </button>
           </form>
         </div>
       </div>
     </section>
-    
   );
 };
 

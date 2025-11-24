@@ -4,7 +4,8 @@ import DefaultBgImg from "../assets/DonatePageImgs/DonateNowImg.webp";
 const Header = ({ HeadText, SubText, BgImg = DefaultBgImg, CurrntPage, PageLink , className=""}) => {
   return (
     <div
-      className=" h-screen bg-cover bg-center mt-24 "
+    data-aos="fade-down"
+      className=" xl:h-screen bg-cover bg-center h-[400px] mt-[80px] bg-no-repeat"
       style={{ backgroundImage: `url(${BgImg})` }}
     >
       <div className="relative px-14 lg:px-28 w-full h-full">
@@ -17,8 +18,8 @@ const Header = ({ HeadText, SubText, BgImg = DefaultBgImg, CurrntPage, PageLink 
         </div>
 
         {/* Bottom element */}
-        <div className="hidden md:block p-5 bg-primary absolute z-10 bottom-0 rounded-t-xl text-white">
-          <h2>
+        <div className="hidden md:block p-4 bg-primary absolute z-10 bottom-0 rounded-t-xl text-white">
+          <>
             <Link to="/" className="hover:underline">
               Home
             </Link>{" "}
@@ -26,7 +27,7 @@ const Header = ({ HeadText, SubText, BgImg = DefaultBgImg, CurrntPage, PageLink 
             <span className="font-bold">
               <Link to={PageLink}>{CurrntPage}</Link>
             </span>
-          </h2>
+          </>
         </div>
       </div>
     </div>

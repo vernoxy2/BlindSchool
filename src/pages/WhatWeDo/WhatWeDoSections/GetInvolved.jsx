@@ -34,10 +34,11 @@ const GetInvolved = () => {
       style={{ backgroundImage: `url(${Involved})` }}
       className="text-center rounded-2xl m-4 py-10 bg-cover bg-center bg-no-repeat"
     >
-      <h1 className="text-white">Get Involved</h1>
+      <h1 data-aos="fade-up" className="text-white">Get Involved</h1>
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {data.map((item) => (
           <div
+          data-aos="zoom-out"
             key={item.id}
             className="shadow-md rounded-2xl flex flex-col items-center justify-center backdrop-blur-sm bg-white/20 py-8 2xl:py-10  hover:scale-105 duration-300 transition-transform"
           >
@@ -48,7 +49,7 @@ const GetInvolved = () => {
           </div>
         ))}
       </div>
-      <h2 className="text-white font-bold">Your time, skill, or donation <br /> can change a life.</h2>
+      <h2 data-aos="fade-up" className="text-white font-bold">Your time, skill, or donation <br /> can change a life.</h2>
     </section>
   );
 };

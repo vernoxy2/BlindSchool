@@ -14,13 +14,14 @@ const ImpactMatters = () => {
       className="text-center bg-no-repeat bg-cover  "
     >
       <div className="space-y-4">
-        <h1 className="text-white">Your Impact Matters</h1>
-        <h2 className="font-bold text-white">How We Make a Difference</h2>
+        <h1 data-aos="fade-up" className="text-white">Your Impact Matters</h1>
+        <h2 data-aos="fade-up" className="font-bold text-white">How We Make a Difference</h2>
         <BaseLine className="bg-white mx-auto" />
       </div>
       <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         {Data.map((item) => (
           <div
+          data-aos="zoom-out"
             key={item.id}
             className="shadow-md rounded-2xl flex flex-col items-center justify-center backdrop-blur-sm bg-white/20 p-8 hover:scale-105 duration-300 transition-transform"
           >
