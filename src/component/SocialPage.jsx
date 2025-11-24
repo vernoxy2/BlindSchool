@@ -20,13 +20,38 @@ const SocialPage = () => {
   // ];
 
   const whatWeDo = [
-    "Education & skill Development",
-    "Vocational Training",
-    "Accommodation, Food & Daily Care",
-    "Healthcare & Medical Support",
-    "Community Outreach",
-    "Your Support Matters",
-  ];
+  {
+    id: 1,
+    title: "Education & Skill Development",
+    link: "/whatwedo/education-skill-development"
+  },
+  {
+    id: 2,
+    title: "Vocational Training",
+    link: "/whatwedo/vocational-training"
+  },
+  {
+    id: 3,
+    title: "Accommodation, Food & Daily Care",
+    link: "/whatwedo/accommodation-food-care"
+  },
+  {
+    id: 4,
+    title: "Healthcare & Medical Support",
+    link: "/whatwedo/healthcare-medical-support"
+  },
+  {
+    id: 5,
+    title: "Community Outreach",
+    link: "/whatwedo/community-outreach"
+  },
+  {
+    id: 6,
+    title: "Your Support Matters",
+    link: "/whatwedo/your-support-matters"
+  }
+];
+
 
   const donateNow = ["Donate your Time", "Donate your Support", "Donate in Kind"];
 
@@ -92,15 +117,18 @@ const SocialPage = () => {
 
         {/* WHAT WE DO */}
         <div>
-          <h3 className="font-bold text-lg mb-2 border-b pb-1 w-fit">
-            What we do
-          </h3>
-          <ul className="space-y-2 text-sm">
-            {whatWeDo.map((item, index) => (
-              <li key={index} className="active:font-bold">{item}</li>
-            ))}
-          </ul>
-        </div>
+  <h3 className="font-bold text-lg mb-2 border-b pb-1 w-fit">
+    What we do
+  </h3>
+  <ul className="space-y-2 text-sm">
+    {whatWeDo.map((item) => (
+      <li key={item.id} className="active:font-bold">
+        <Link to={item.link}>{item.title}</Link>
+      </li>
+    ))}
+  </ul>
+</div>
+
 
         {/* DONATE NOW */}
         <div >
