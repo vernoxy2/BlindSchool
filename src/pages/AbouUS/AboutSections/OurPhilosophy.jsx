@@ -1,10 +1,11 @@
 import React from "react";
 import philosophy from "../../../assets/AboutUsImgs/Philosophy/philosophy.svg";
 import BaseLine from "../../../component/BaseLine";
+import BGRight from "../../../assets/AboutUsImgs/Philosophy/BGRight.svg";
 
 const OurPhilosophy = () => {
   return (
-    <section className="text-center flex flex-col items-center container">
+    <section className="text-center flex flex-col items-center container space-y-4 relative">
       <h1 data-aos="fade-up">Our Philosophy</h1>
       <img data-aos="zoom-in" src={philosophy} alt="philosophy" className="text-center " />
       <p data-aos="fade-up" className="text-xl font-bold max-w-2xl mb-6">
@@ -17,6 +18,8 @@ const OurPhilosophy = () => {
         education, empathy, and empowerment, we strive to create a world where
         every individual can live with dignity, confidence, and hope.
       </p>
+      <img src={BGRight} alt="" className="absolute right-0 top-0 h-56"/>
+      <img src={BGRight} alt="" className="absolute left-0 bottom-0 h-56 mt-0"/>
     </section>
   );
 };

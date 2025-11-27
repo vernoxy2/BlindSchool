@@ -46,7 +46,7 @@ const HomePage = () => {
       },
     ];
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Header slides={slides}/>
       <ValuesApp />
       <AboutUS />

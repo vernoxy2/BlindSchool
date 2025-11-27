@@ -9,6 +9,7 @@ import OurJourney from "./AboutSections/OurJourney ";
 import Expanding from "./AboutSections/Expanding";
 import OurMissionVision from "./AboutSections/OurMissionVision";
 import Certificate from "./AboutSections/Certificate";
+import Journey from "./AboutSections/Journey";
 
 const AboutUs = () => {
   return (
@@ -27,8 +28,9 @@ const AboutUs = () => {
       />
       <Committed />
       <OurPhilosophy />
-      {/* <OurJourney /> */}
-      {/* <Expanding /> */}
+      <OurJourney />
+      {/* <Journey/> */}
+      <Expanding />
       <OurMissionVision />
       <Certificate />
       <Help />

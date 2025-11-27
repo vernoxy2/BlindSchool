@@ -5,7 +5,6 @@ import Vector2 from "../../../assets/HomepageImgs/Vector2.svg";
 import Vector22 from "../../../assets/HomepageImgs/Vector22.svg";
 import Vector3 from "../../../assets/HomepageImgs/Vector3.svg";
 import Vector33 from "../../../assets/HomepageImgs/Vector33.svg";
-import { link } from "framer-motion/client";
 import { Link } from "react-router-dom";
 
 const HowCanYouHelp = () => {
